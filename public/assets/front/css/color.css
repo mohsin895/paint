@@ -1,0 +1,868 @@
+/* Brillux styles - Farbtöne & Muster
+-------------------------------------------------- */
+
+/* Farben Scala */
+span.scala_03, img.scala_03 { background-color: #edb700; color:#edb700;}
+span.scala_06, img.scala_06 { background-color: #dba008; color:#dba008;}
+span.scala_09, img.scala_09 { background-color: #faa800; color:#faa800;}
+span.scala_12, img.scala_12 { background-color: #e79420; color:#e79420;}
+span.scala_15, img.scala_15 { background-color: #cc7b27; color:#cc7b27;}
+span.scala_18, img.scala_18 { background-color: #d4711e; color:#d4711e;}
+span.scala_21, img.scala_21 { background-color: #ca6135; color:#ca6135;}
+span.scala_24, img.scala_24 { background-color: #a94335; color:#a94335;}
+span.scala_27, img.scala_27 { background-color: #993033; color:#993033;}
+span.scala_30, img.scala_30 { background-color: #9c313e; color:#9c313e;}
+span.scala_33, img.scala_33 { background-color: #80273e; color:#80273e;}
+span.scala_36, img.scala_36 { background-color: #843356; color:#843356;}
+span.scala_39, img.scala_39 { background-color: #913a76; color:#913a76;}
+span.scala_42, img.scala_42 { background-color: #713a72; color:#713a72;}
+span.scala_45, img.scala_45 { background-color: #482d59; color:#482d59;}
+span.scala_48, img.scala_48 { background-color: #695093; color:#695093;}
+span.scala_51, img.scala_51 { background-color: #524a83; color:#524a83;}
+span.scala_54, img.scala_54 { background-color: #373e4a; color:#373e4a;}
+span.scala_57, img.scala_57 { background-color: #27528f; color:#27528f;}
+span.scala_60, img.scala_60 { background-color: #095589; color:#095589;}
+span.scala_63, img.scala_63 { background-color: #005e8e; color:#005e8e;}
+span.scala_66, img.scala_66 { background-color: #006086; color:#006086;}
+span.scala_69, img.scala_69 { background-color: #00768c; color:#00768c;}
+span.scala_72, img.scala_72 { background-color: #007a81; color:#007a81;}
+span.scala_75, img.scala_75 { background-color: #006f5e; color:#006f5e;}
+span.scala_78, img.scala_78 { background-color: #007d59; color:#007d59;}
+span.scala_81, img.scala_81 { background-color: #05573f; color:#05573f;}
+span.scala_84, img.scala_84 { background-color: #0e7038; color:#0e7038;}
+span.scala_87, img.scala_87 { background-color: #a1bc21; color:#a1bc21;}
+span.scala_90, img.scala_90 { background-color: #c2cb21; color:#c2cb21;}
+span.scala_93, img.scala_93 { background-color: #e5d214; color:#e5d214;}
+span.scala_96, img.scala_96 { background-color: #f1d216; color:#f1d216;}
+span.scala_99, img.scala_99 { background-color: #171819; color:#171819;}
+
+span.scala_8403, img.scala_8403 { background-color: #8c8c86; color:#8c8c86;}
+span.scala_8406, img.scala_8406 { background-color: #808478; color:#808478;}
+span.scala_8409, img.scala_8409 { background-color: #93a688; color:#93a688;}
+span.scala_8412, img.scala_8412 { background-color: #7a9166; color:#7a9166;}
+span.scala_8415, img.scala_8415 { background-color: #6d8e50; color:#6d8e50;}
+span.scala_8418, img.scala_8418 { background-color: #688e57; color:#688e57;}
+span.scala_8421, img.scala_8421 { background-color: #6ba655; color:#6ba655;}
+
+span.scala_841218, img.scala_841218 { background-color: #9fb976; color:#9fb976;}
+span.scala_841221, img.scala_841221 { background-color: #7d9f54; color:#7d9f54;}
+span.scala_841224, img.scala_841224 { background-color: #6b8555; color:#6b8555;}
+span.scala_841227, img.scala_841227 { background-color: #6a8055; color:#6a8055;}
+span.scala_841230, img.scala_841230 { background-color: #3c5634; color:#3c5634;}
+
+span.scala_030303, img.scala_030303 { background-color: #E9E7E1; color:#E9E7E1;}
+span.scala_030303 { background-color: #E9E7E1;}
+span.scala_030306 { background-color: #E4E1D7;}
+span.scala_030309 { background-color: #D8D8CF;}
+span.scala_030312 { background-color: #C7C5BB;}
+span.scala_030315 { background-color: #BBB8AF;}
+span.scala_030316 { background-color: #A7A49D;}
+span.scala_030318 { background-color: #97948C;}
+span.scala_030321 { background-color: #85827B;}
+span.scala_030324 { background-color: #74726B;}
+span.scala_030325 { background-color: #6C6861;}
+span.scala_030327 { background-color: #615C52;}
+span.scala_030330 { background-color: #544F46;}
+
+
+span.scala_180927, img.scala_180927 { background-color:#644B40;} 
+span.scala_121821, img.scala_121821 { background-color:#B27338;} 
+span.scala_091818, img.scala_091818 { background-color:#D6A057;} 
+span.scala_061809, img.scala_061809 { background-color:#F4CF6A;} 
+span.scala_120930, img.scala_120930 { background-color:#574940;} 
+span.scala_150924, img.scala_150924 { background-color:#7F5E4C;} 
+span.scala_090915, img.scala_090915 { background-color:#CEB48C;} 
+span.scala_090909, img.scala_090909 { background-color:#E5D6BB;} 
+span.scala_061221, img.scala_061221 { background-color:#A17F48;} 
+span.scala_061818, img.scala_061818 { background-color:#C8952A;} 
+span.scala_091209, img.scala_091209 { background-color:#E8CC9E;} 
+span.scala_090903, img.scala_090903 { background-color:#F8E9D3;} 
+span.scala_810327, img.scala_810327 { background-color:#555D5A;} 
+span.scala_870321, img.scala_870321 { background-color:#828379;} 
+span.scala_870315, img.scala_870315 { background-color:#B3B5AA;} 
+span.scala_030309, img.scala_030309 { background-color:#D8D8CF;} 
+span.scala_930930, img.scala_930930 { background-color:#71694A;} 
+span.scala_930924, img.scala_930924 { background-color:#A39B6D;} 
+span.scala_900612, img.scala_900612 { background-color:#C5C4AD;} 
+span.scala_870306, img.scala_870306 { background-color:#E2E3D8;} 
+span.scala_780330, img.scala_780330 { background-color:#444D4C;} 
+span.scala_900621, img.scala_900621 { background-color:#85826E;} 
+span.scala_030618, img.scala_030618 { background-color:#A0957F;} 
+span.scala_030612, img.scala_030612 { background-color:#D6CCB5;} 
+span.scala_810630, img.scala_810630 { background-color:#3F4941;} 
+span.scala_840930, img.scala_840930 { background-color:#525E4B;} 
+span.scala_841827, img.scala_841827 { background-color:#467148;} 
+span.scala_840927, img.scala_840927 { background-color:#738466;} 
+span.scala_631230, img.scala_631230 { background-color:#354E65;} 
+span.scala_630927, img.scala_630927 { background-color:#4C6170;} 
+span.scala_661224, img.scala_661224 { background-color:#48768C;} 
+span.scala_660918, img.scala_660918 { background-color:#839EAC;} 
+span.scala_571227, img.scala_571227 { background-color:#495A7B;} 
+span.scala_600921, img.scala_600921 { background-color:#70839B;} 
+span.scala_600915, img.scala_600915 { background-color:#ABB7C5;} 
+span.scala_600612, img.scala_600612 { background-color:#BFC4CA;} 
+span.scala_211230, img.scala_211230 { background-color:#6E4742;} 
+span.scala_271230, img.scala_271230 { background-color:#7E3E3E;} 
+span.scala_271827, img.scala_271827 { background-color:#9A4641;} 
+span.scala_272430, img.scala_272430 { background-color:#9E3F40;} 
+span.scala_240630, img.scala_240630 { background-color:#513E40;} 
+span.scala_300627, img.scala_300627 { background-color:#665459;} 
+span.scala_180621, img.scala_180621 { background-color:#877E7A;} 
+span.scala_030318, img.scala_030318 { background-color:#97948C;} 
+span.scala_720630, img.scala_720630 { background-color:#4D5155;} 
+span.scala_690321, img.scala_690321 { background-color:#7D8587;} 
+span.scala_630318, img.scala_630318 { background-color:#939BA1;} 
+span.scala_750312, img.scala_750312 { background-color:#C9CBC9;} 
+span.scala_630315, img.scala_630315 { background-color:#9EA4A8;} 
+span.scala_510312, img.scala_510312 { background-color:#CBCBCA;} 
+		
+	
+
+
+
+span.scala_120612, img.scala_120612 { background-color: #cfbaa5; color:#cfbaa5;}
+span.scala_180624, img.scala_180624 { background-color: #7e6862; color:#7e6862;}
+span.scala_180921, img.scala_180921 { background-color: #b98268; color:#b98268;}
+span.scala_300927, img.scala_300927 { background-color: #6f2b36; color:#6f2b36;}
+span.scala_750312, img.scala_750312 { background-color: #c6c2bb; color:#c6c2bb;}
+span.scala_930303, img.scala_930303 { background-color: #f8f6e9; color:#f8f6e9;}
+
+/* Farben Tapeten */
+span.tapete_5000, img.tapete_5000 { background-image:url(images/farbtoene_muster/wand/tapeten/5000.jpg)}
+span.tapete_5001, img.tapete_5001 { background-image:url(images/farbtoene_muster/wand/tapeten/5001.jpg)}
+span.tapete_5002, img.tapete_5002 { background-image:url(images/farbtoene_muster/wand/tapeten/5002.jpg)}
+span.tapete_5003, img.tapete_5003 { background-image:url(images/farbtoene_muster/wand/tapeten/5003.jpg)}
+span.tapete_5004, img.tapete_5004 { background-image:url(images/farbtoene_muster/wand/tapeten/5004.jpg)}
+span.tapete_5005, img.tapete_5005 { background-image:url(images/farbtoene_muster/wand/tapeten/5005.jpg)}
+span.tapete_5006, img.tapete_5006 { background-image:url(images/farbtoene_muster/wand/tapeten/5006.jpg)}
+span.tapete_5007, img.tapete_5007 { background-image:url(images/farbtoene_muster/wand/tapeten/5007.jpg)}
+span.tapete_5008, img.tapete_5008 { background-image:url(images/farbtoene_muster/wand/tapeten/5008.jpg)}
+span.tapete_5009, img.tapete_5009 { background-image:url(images/farbtoene_muster/wand/tapeten/5009.jpg)}
+span.tapete_5010, img.tapete_5010 { background-image:url(images/farbtoene_muster/wand/tapeten/5010.jpg)}
+span.tapete_5011, img.tapete_5011 { background-image:url(images/farbtoene_muster/wand/tapeten/5011.jpg)}
+span.tapete_5012, img.tapete_5012 { background-image:url(images/farbtoene_muster/wand/tapeten/5012.jpg)}
+
+span.tapete_5013, img.tapete_5013 { background-image:url(images/farbtoene_muster/wand/tapeten/5013.jpg)}
+span.tapete_5014, img.tapete_5014 { background-image:url(images/farbtoene_muster/wand/tapeten/5014.jpg)}
+span.tapete_5015, img.tapete_5015 { background-image:url(images/farbtoene_muster/wand/tapeten/5015.jpg)}
+span.tapete_5016, img.tapete_5016 { background-image:url(images/farbtoene_muster/wand/tapeten/5016.jpg)}
+span.tapete_5017, img.tapete_5017 { background-image:url(images/farbtoene_muster/wand/tapeten/5017.jpg)}
+span.tapete_5018, img.tapete_5018 { background-image:url(images/farbtoene_muster/wand/tapeten/5018.jpg)}
+span.tapete_5019, img.tapete_5019 { background-image:url(images/farbtoene_muster/wand/tapeten/5019.jpg)}
+span.tapete_5020, img.tapete_5020 { background-image:url(images/farbtoene_muster/wand/tapeten/5020.jpg)}
+span.tapete_5021, img.tapete_5021 { background-image:url(images/farbtoene_muster/wand/tapeten/5021.jpg)}
+span.tapete_5022, img.tapete_5022 { background-image:url(images/farbtoene_muster/wand/tapeten/5022.jpg)}
+span.tapete_5023, img.tapete_5023 { background-image:url(images/farbtoene_muster/wand/tapeten/5023.jpg)}
+span.tapete_5024, img.tapete_5024 { background-image:url(images/farbtoene_muster/wand/tapeten/5024.jpg)}
+span.tapete_5025, img.tapete_5025 { background-image:url(images/farbtoene_muster/wand/tapeten/5025.jpg)}
+span.tapete_5026, img.tapete_5026 { background-image:url(images/farbtoene_muster/wand/tapeten/5026.jpg)}
+span.tapete_5027, img.tapete_5027 { background-image:url(images/farbtoene_muster/wand/tapeten/5027.jpg)}
+span.tapete_5028, img.tapete_5028 { background-image:url(images/farbtoene_muster/wand/tapeten/5028.jpg)}
+span.tapete_5029, img.tapete_5029 { background-image:url(images/farbtoene_muster/wand/tapeten/5029.jpg)}
+span.tapete_5030, img.tapete_5030 { background-image:url(images/farbtoene_muster/wand/tapeten/5030.jpg)}
+
+/* Farben Designboden */
+span.dekor_300, img.dekor_300 { background-image:url(images/farbtoene_muster/boden/designboden/300.jpg)}
+span.dekor_301, img.dekor_301 { background-image:url(images/farbtoene_muster/boden/designboden/301.jpg)}
+span.dekor_302, img.dekor_302 { background-image:url(images/farbtoene_muster/boden/designboden/302.jpg)}
+span.dekor_303, img.dekor_303 { background-image:url(images/farbtoene_muster/boden/designboden/303.jpg)}
+span.dekor_304, img.dekor_304 { background-image:url(images/farbtoene_muster/boden/designboden/304.jpg)}
+span.dekor_305, img.dekor_305 { background-image:url(images/farbtoene_muster/boden/designboden/305.jpg)}
+span.dekor_306, img.dekor_306 { background-image:url(images/farbtoene_muster/boden/designboden/306.jpg)}
+span.dekor_307, img.dekor_307 { background-image:url(images/farbtoene_muster/boden/designboden/307.jpg)}
+span.dekor_400, img.dekor_400 { background-image:url(images/farbtoene_muster/boden/designboden/400.jpg)}
+span.dekor_401, img.dekor_401 { background-image:url(images/farbtoene_muster/boden/designboden/401.jpg)}
+span.dekor_402, img.dekor_402 { background-image:url(images/farbtoene_muster/boden/designboden/402.jpg)}
+span.dekor_403, img.dekor_403 { background-image:url(images/farbtoene_muster/boden/designboden/403.jpg)}
+span.dekor_404, img.dekor_404 { background-image:url(images/farbtoene_muster/boden/designboden/404.jpg)}
+span.dekor_405, img.dekor_405 { background-image:url(images/farbtoene_muster/boden/designboden/405.jpg)}
+span.dekor_406, img.dekor_406 { background-image:url(images/farbtoene_muster/boden/designboden/406.jpg)}
+span.dekor_407, img.dekor_407 { background-image:url(images/farbtoene_muster/boden/designboden/407.jpg)}
+span.dekor_408, img.dekor_408 { background-image:url(images/farbtoene_muster/boden/designboden/408.jpg)}
+span.dekor_409, img.dekor_409 { background-image:url(images/farbtoene_muster/boden/designboden/409.jpg)}
+span.dekor_410, img.dekor_410 { background-image:url(images/farbtoene_muster/boden/designboden/410.jpg)}
+span.dekor_411, img.dekor_411 { background-image:url(images/farbtoene_muster/boden/designboden/411.jpg)}
+span.dekor_412, img.dekor_412 { background-image:url(images/farbtoene_muster/boden/designboden/412.jpg)}
+span.dekor_413, img.dekor_413 { background-image:url(images/farbtoene_muster/boden/designboden/413.jpg)}
+span.dekor_414, img.dekor_414 { background-image:url(images/farbtoene_muster/boden/designboden/414.jpg)}
+span.dekor_415, img.dekor_415 { background-image:url(images/farbtoene_muster/boden/designboden/415.jpg)}
+span.dekor_416, img.dekor_416 { background-image:url(images/farbtoene_muster/boden/designboden/416.jpg)}
+span.dekor_417, img.dekor_417 { background-image:url(images/farbtoene_muster/boden/designboden/417.jpg)}
+span.dekor_418, img.dekor_418 { background-image:url(images/farbtoene_muster/boden/designboden/418.jpg)}
+span.dekor_419, img.dekor_419 { background-image:url(images/farbtoene_muster/boden/designboden/419.jpg)}
+span.dekor_420, img.dekor_420 { background-image:url(images/farbtoene_muster/boden/designboden/420.jpg)}
+span.dekor_421, img.dekor_421 { background-image:url(images/farbtoene_muster/boden/designboden/421.jpg)}
+span.dekor_422, img.dekor_422 { background-image:url(images/farbtoene_muster/boden/designboden/422.jpg)}
+span.dekor_423, img.dekor_423 { background-image:url(images/farbtoene_muster/boden/designboden/423.jpg)}
+span.dekor_424, img.dekor_424 { background-image:url(images/farbtoene_muster/boden/designboden/424.jpg)}
+span.dekor_425, img.dekor_425 { background-image:url(images/farbtoene_muster/boden/designboden/425.jpg)}
+span.dekor_426, img.dekor_426 { background-image:url(images/farbtoene_muster/boden/designboden/426.jpg)}
+span.dekor_427, img.dekor_427 { background-image:url(images/farbtoene_muster/boden/designboden/427.jpg)}
+span.dekor_428, img.dekor_428 { background-image:url(images/farbtoene_muster/boden/designboden/428.jpg)}
+span.dekor_429, img.dekor_429 { background-image:url(images/farbtoene_muster/boden/designboden/429.jpg)}
+span.dekor_430, img.dekor_430 { background-image:url(images/farbtoene_muster/boden/designboden/430.jpg)}
+span.dekor_431, img.dekor_431 { background-image:url(images/farbtoene_muster/boden/designboden/431.jpg)}
+span.dekor_432, img.dekor_432 { background-image:url(images/farbtoene_muster/boden/designboden/432.jpg)}
+span.dekor_433, img.dekor_433 { background-image:url(images/farbtoene_muster/boden/designboden/433.jpg)}
+span.dekor_434, img.dekor_434 { background-image:url(images/farbtoene_muster/boden/designboden/434.jpg)}
+
+img.dekor_300 { background-image:url(images/farbtoene_muster/boden/designboden/300_Raumbild.jpg)}
+img.dekor_301 { background-image:url(images/farbtoene_muster/boden/designboden/301_Raumbild.jpg)}
+img.dekor_302 { background-image:url(images/farbtoene_muster/boden/designboden/302_Raumbild.jpg)}
+img.dekor_303 { background-image:url(images/farbtoene_muster/boden/designboden/303_Raumbild.jpg)}
+img.dekor_304 { background-image:url(images/farbtoene_muster/boden/designboden/304_Raumbild.jpg)}
+img.dekor_305 { background-image:url(images/farbtoene_muster/boden/designboden/305_Raumbild.jpg)}
+img.dekor_306 { background-image:url(images/farbtoene_muster/boden/designboden/306_Raumbild.jpg)}
+img.dekor_307 { background-image:url(images/farbtoene_muster/boden/designboden/307_Raumbild.jpg)}
+img.dekor_400 { background-image:url(images/farbtoene_muster/boden/designboden/400_Raumbild.jpg)}
+img.dekor_401 { background-image:url(images/farbtoene_muster/boden/designboden/401_Raumbild.jpg)}
+img.dekor_402 { background-image:url(images/farbtoene_muster/boden/designboden/402_Raumbild.jpg)}
+img.dekor_403 { background-image:url(images/farbtoene_muster/boden/designboden/403_Raumbild.jpg)}
+img.dekor_404 { background-image:url(images/farbtoene_muster/boden/designboden/404_Raumbild.jpg)}
+img.dekor_405 { background-image:url(images/farbtoene_muster/boden/designboden/405_Raumbild.jpg)}
+img.dekor_406 { background-image:url(images/farbtoene_muster/boden/designboden/406_Raumbild.jpg)}
+img.dekor_407 { background-image:url(images/farbtoene_muster/boden/designboden/407_Raumbild.jpg)}
+img.dekor_408 { background-image:url(images/farbtoene_muster/boden/designboden/408_Raumbild.jpg)}
+img.dekor_409 { background-image:url(images/farbtoene_muster/boden/designboden/409_Raumbild.jpg)}
+img.dekor_410 { background-image:url(images/farbtoene_muster/boden/designboden/410_Raumbild.jpg)}
+img.dekor_411 { background-image:url(images/farbtoene_muster/boden/designboden/411_Raumbild.jpg)}
+img.dekor_412 { background-image:url(images/farbtoene_muster/boden/designboden/412_Raumbild.jpg)}
+img.dekor_413 { background-image:url(images/farbtoene_muster/boden/designboden/413_Raumbild.jpg)}
+img.dekor_414 { background-image:url(images/farbtoene_muster/boden/designboden/414_Raumbild.jpg)}
+img.dekor_415 { background-image:url(images/farbtoene_muster/boden/designboden/415_Raumbild.jpg)}
+img.dekor_416 { background-image:url(images/farbtoene_muster/boden/designboden/416_Raumbild.jpg)}
+img.dekor_417 { background-image:url(images/farbtoene_muster/boden/designboden/417_Raumbild.jpg)}
+img.dekor_418 { background-image:url(images/farbtoene_muster/boden/designboden/418_Raumbild.jpg)}
+img.dekor_419 { background-image:url(images/farbtoene_muster/boden/designboden/419_Raumbild.jpg)}
+img.dekor_420 { background-image:url(images/farbtoene_muster/boden/designboden/420_Raumbild.jpg)}
+img.dekor_421 { background-image:url(images/farbtoene_muster/boden/designboden/421_Raumbild.jpg)}
+img.dekor_422 { background-image:url(images/farbtoene_muster/boden/designboden/422_Raumbild.jpg)}
+img.dekor_423 { background-image:url(images/farbtoene_muster/boden/designboden/423_Raumbild.jpg)}
+img.dekor_424 { background-image:url(images/farbtoene_muster/boden/designboden/424_Raumbild.jpg)}
+img.dekor_425 { background-image:url(images/farbtoene_muster/boden/designboden/425_Raumbild.jpg)}
+img.dekor_426 { background-image:url(images/farbtoene_muster/boden/designboden/426_Raumbild.jpg)}
+img.dekor_427 { background-image:url(images/farbtoene_muster/boden/designboden/427_Raumbild.jpg)}
+img.dekor_428 { background-image:url(images/farbtoene_muster/boden/designboden/428_Raumbild.jpg)}
+img.dekor_429 { background-image:url(images/farbtoene_muster/boden/designboden/429_Raumbild.jpg)}
+img.dekor_430 { background-image:url(images/farbtoene_muster/boden/designboden/430_Raumbild.jpg)}
+img.dekor_431 { background-image:url(images/farbtoene_muster/boden/designboden/431_Raumbild.jpg)}
+img.dekor_432 { background-image:url(images/farbtoene_muster/boden/designboden/432_Raumbild.jpg)}
+img.dekor_433 { background-image:url(images/farbtoene_muster/boden/designboden/433_Raumbild.jpg)}
+img.dekor_434 { background-image:url(images/farbtoene_muster/boden/designboden/434_Raumbild.jpg)}
+
+
+/* Farben Fassade */
+span.fassade_3409, img.fassade_3409 { background-image:url(images/farbtoene_muster/fassade/putze/3409.jpg)}
+span.fassade_5101, img.fassade_5101 { background-image:url(images/farbtoene_muster/fassade/putze/5101.jpg)}
+span.fassade_6102, img.fassade_6102 { background-image:url(images/farbtoene_muster/fassade/putze/6102.jpg)}
+span.fassade_7401, img.fassade_7401 { background-image:url(images/farbtoene_muster/fassade/putze/7401.jpg)}
+span.fassade_7413, img.fassade_7413 { background-image:url(images/farbtoene_muster/fassade/putze/7413.jpg)}
+span.fassade_8408, img.fassade_8408 { background-image:url(images/farbtoene_muster/fassade/putze/8408.jpg)}
+span.fassade_9401, img.fassade_9401 { background-image:url(images/farbtoene_muster/fassade/putze/9401.jpg)}
+span.fassade_9408, img.fassade_9408 { background-image:url(images/farbtoene_muster/fassade/putze/9408.jpg)}
+span.fassade_9650, img.fassade_9650 { background-image:url(images/farbtoene_muster/fassade/putze/9650.jpg)}
+
+
+.slider_vertical.boden.owl-carousel.owl-theme.owl-loaded {
+    max-width: 100%;
+    width: 100%;
+}
+.farbtoene-muster .slider_vertical.boden .item {
+    height: auto !important;
+}
+
+.farbtoene-muster .slider_vertical.boden div.item img {
+    width: 100% !important;
+    max-width: none !important;
+	position:relative;
+    max-height: none !important;
+	border: 1px solid #d5d5d5;
+}
+
+.bs-example.bs-example-tabs.subnavigation.farbtoene-muster { margin:0;}
+form#formsearch2 {
+	position:relative;
+	max-width: 115px;
+	float: right;
+	margin: 5px 0px 0 15px;
+	text-align: right;
+	z-index:10;
+}
+#formsearch2.suche .btn.header {
+    top: 4px;
+    left: 15px;
+	right:inherit;
+}
+#formsearch2 .form-control {
+	height: 38px;
+    padding: 4px 12px 3px 30px;
+    margin: 3px 0 0 0;
+    background-color: transparent;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* Farbfächer */
+div#items-view {
+    display: block;
+    float: left;
+	width:100%;
+}
+.color-fan {
+    position: relative;
+    margin: 20px auto 60px;
+    height: 100%;
+    width: 100%;
+    padding: 0 0 75%;
+}
+ .color-slider {
+    height: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+ .color-fan .color-fan-wing {
+	height: 100%;
+    width: 20%;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 70%;
+    background-color: #fff;
+    -moz-transform-origin: 50% 95%;
+    -ms-transform-origin: 50% 95%;
+    -o-transform-origin: 50% 95%;
+    -webkit-transform-origin: 50% 95%;
+    transform-origin: 50% 95%;
+    transition: transform 2000ms ease-in-out;
+    -webkit-transition: -webkit-transform 2000ms ease-out;
+    -moz-transition: -moz-transform 2000ms ease-out;
+    -o-transition: -webkit-transform 2000ms ease-out;
+}
+
+ .color-fan .color-fan-wing:first-child { box-shadow:0 0 10px #d5d5d5;}
+
+ .color-fan .color-fan-wing .color-fan-entry {
+	width: 100%;
+    height: 23.5% !important;
+    border: 3px solid #fff;
+	display:block;
+}
+.farbwahl  .color-fan .color-fan-wing .color-fan-entry span {
+	width: 100%;
+    height: 100% !important;}
+
+
+ .color-slider .ui-slider-handle {
+    height: 40px;
+    background-color: #e6e6e6;
+    margin: 0 auto 20px;
+    display: block;
+	width: calc(100% - 30px);
+    float: none;
+	background: url(images/farbtoene_muster/farbwahl.png) no-repeat center;
+	background-size:contain;
+}
+/* Farbwahl */
+.farbtoene-muster .farbwahl.farbtoene_muster, .farbtoene-muster .farbtoene_muster {
+    margin: 15px -5px 0;
+}
+
+.farbtoene-muster .tab-pane > .farbwahl.farbtoene_muster {
+    margin: 15px 0px 0 10px;
+}
+
+.farbtoene_muster {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    padding: 0px 0;
+    height: auto;
+    overflow: inherit;
+    top: inherit;
+}
+.farbtoene-muster .farbwahl.farbtoene_muster span,
+.farbtoene-muster .farbtoene_muster span {
+    float: left;
+	width: 100%;
+	height:100%;
+    padding: 0 0 100%;
+    display: block;
+    border: 1px solid #d5d5d5;
+    position: relative;
+    /* background-size: cover; */
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.farbtoene-muster .farbwahl.farbtoene_muster a.col-md-2.col-sm-3.col-xs-3, 
+.farbtoene-muster .farbwahl.farbtoene_muster a.col-md-1.col-sm-2.col-xs-2,
+.farbtoene-muster .farbtoene_muster a.col-md-2.col-sm-3.col-xs-3, 
+.farbtoene-muster .farbtoene_muster a.col-md-1.col-sm-2.col-xs-2 {
+    padding: 5px;
+}
+.farbtoene-muster .farbwahl.farbtoene_muster a.col-md-3.col-sm-3.col-xs-3,
+.farbtoene-muster .farbtoene_muster a.col-md-3.col-sm-3.col-xs-3 {
+    padding: 15px;
+}
+.margin-5 { margin: 0 -5px !important}
+
+.farbtoene-muster .farbwahl.farbtoene_muster a strong,
+.farbtoene-muster .farbtoene_muster a strong {
+    color: #000;
+    margin: 5px 0 0;
+    font-weight: normal !important;
+    float: left;
+}
+
+.farbtoene-muster .farbwahl a.col-md-2.col-sm-3.col-xs-3.active span {
+    border: 2px solid #cc0000;
+    z-index: 1;
+	margin: -2px;
+}
+.farbtoene-muster .farbwahl a.col-md-2.col-sm-3.col-xs-3.active:nth-child(6n) span {
+	margin: -1px;
+}
+
+/*.farbtoene-muster .farbwahl.farbtoene_muster a:nth-child(6n) span {
+	margin:9px -9px 9px 9px;}*/
+
+.farbtoene-muster .col-md-3.col-sm-4.farbwahl {
+	width: initial;
+    margin: 0;
+    padding: 0 15px;
+}
+.farbtoene-muster .col-md-3.col-sm-4.farbwahl a span{
+	margin: 0;
+    display: block;
+    height: 108px;
+    width: 108px;
+} 
+
+
+.farbtoene-muster .socialmedia { float:left;}
+
+.farbtoene-muster .navbar-right .socialmedia a {
+	padding: 0 0 0 25px;}
+		
+.farbtoene-muster .socialmedia a {
+    display: inline!important;
+    padding: 0 5px;
+    width: inherit !important;
+    float: none;
+	color: #888;
+}
+.socialmedia a i.fa.fa-google-plus {
+    bottom: -5px;
+    position: relative;
+}
+
+.farbtoene-muster .btn-default {
+    max-width: none !important;
+    clear: both !important;
+   /* width: 100% !important;*/
+	width: -moz-calc(100% - 73px);
+	width: calc(100% - 73px);
+}
+
+.farbtoene-muster .slider_vertical div.item img, .farbtoene-muster .thumbnails_vertical div.item img { padding:0; background-size: contain; background-position:center;}
+
+.farbtoene-muster ul.nav.nav-tabs.warenkorb li {
+	padding: 5px 0 0;
+}
+.farbtoene-muster ul.nav.nav-tabs.warenkorb li > a {
+    padding: 10px 7px;
+}	
+
+
+ul.nav.nav-tabs.pull-right.farbwahl_kacheln_faecher {
+    border: 0;
+}
+
+ul.nav.nav-tabs.pull-right.farbwahl_kacheln_faecher li.active {
+    display: none;
+}
+
+/* FLEXSLIDER */
+/*.flexslider3.farbtoene-muster li.flex-active-slide {
+    min-width: 25%;
+}*/
+
+/*.flexslider3 li { display:none}
+.flexslider3 li:first-child { display:block}*/
+
+.farbtoene-muster .flexslider3.farbtoene-muster2 li img {
+    width: calc(100% - 50px);
+    margin: auto;
+    text-align: center;
+    display: block;
+}
+.flexslider3.farbtoene-muster2 > .flex-control-nav { display:none;}
+
+
+.farbtoene-muster .flexslider3 {
+    margin: 0 -15px 30px;
+}	
+.farbtoene-muster .flexslider3.farbtoene-muster  > .flex-control-nav {
+    bottom: -40px !important;
+}
+
+.farbtoene-muster .flexslider3.steuerelemente > .flex-control-nav {
+    width: calc(100% - 15px);}
+	
+.farbtoene-muster .flexslider3.farbtoene-muster  > ul.flex-direction-nav {
+    width: 30%;
+	min-width: 175px;
+    margin: auto !important;
+    position: relative;
+}	
+
+.farbtoene-muster .flexslider3.farbtoene-muster .flex-control-paging li a.flex-active {
+    background: #d5d5d5;
+}
+.farbtoene-muster .flexslider3.farbtoene-muster .flex-control-paging li a {
+    border: 1px solid #d5d5d5;}
+	
+.farbtoene-muster .flexslider3.farbtoene-muster > .flex-direction-nav a {
+    top: 100% !important;
+    margin: 0;
+	width: 20px;
+}
+.farbtoene-muster .flexslider3.steuerelemente > .flex-direction-nav a,
+.farbtoene-muster .flexslider3.farbtoene-muster2 > .flex-direction-nav a { top:50% !important; height:50px; width: 20px;}
+
+.farbtoene-muster .flexslider3 .flex-direction-nav a:before {
+	font-size: 35px !important;	
+}
+.farbtoene-muster .flexslider3.farbtoene-muster .flex-direction-nav a:before,
+.farbtoene-muster .flexslider3.farbtoene-muster2 .flex-direction-nav a:before {
+    color: #d5d5d5 !important;}	
+.farbtoene-muster .flexslider3.steuerelemente > .flex-direction-nav .flex-next {
+    right: 20px;
+    text-align: right;
+}
+
+
+.btn.col-md-6.col-sm-6.col-xs-12 {
+    border-radius: 100%;
+    background: #f5f5f5;
+    font-size: larger;
+    border: 1px solid #d5d5d5;
+	width: 50px;
+    height: 50px;
+    color: #666;
+    float: right;
+    padding: 10px 15px !important;
+    margin: 0 15px 0 0;
+}
+
+
+.farbtoene-muster select.form-control {
+    height: 30px;
+    margin: 5px 0;
+	padding: 0 0 0 12px;
+	width: calc(100% - 30px);
+	float:left;
+}
+i.hinweis_grau {
+    margin: auto;
+    display: block;
+    width: 30px;
+    float: left;
+    text-align: center;
+    padding: 10px 0 0;
+    height: 30px;
+}
+.farbtoene_muster a.big_picture {
+    padding: 0 15px;
+    margin: 0;
+	position:relative;
+}
+.farbtoene_muster a.big_picture:hover span { 
+border:1px solid #cc0000;}
+.farbtoene_muster a.big_picture:hover span:after {
+    content: "\f002";
+	display: inline-block;
+	/*color:#fff;
+	box-shadow:0 0 5px #666;*/
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+	position:absolute;
+	bottom:5%;
+	right:5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+
+
+
+ @media (max-width: 767px) {
+.farbtoene_muster a.big_picture span:after {
+    content: "\f002";
+	display: inline-block;
+	/*color:#fff;
+	box-shadow:0 0 5px #666;*/
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+	position:absolute;
+	bottom:5%;
+	right:5%;
+    -webkit-font-smoothing: antialiased;
+}	 
+	 
+/*  #accordion.farbtoene-muster { margin-top:-50px}*/
+#accordion.farbtoene-muster button#dropdownMenu1.btn-default {
+    background-color: #f5f5f5;
+    color: #000;
+	z-index:0;
+    padding: 6px 10px;
+    margin: 0 0 20px;
+    width: 100%;
+    max-width: none;
+    text-align: left;
+    font-size: inherit;
+    display: block;
+}
+
+#accordion.farbtoene-muster .panel-heading {
+    color: #333333;
+    background-color: #f5f5f5;
+    border-color: #dddddd;
+}
+
+#accordion.farbtoene-muster .panel-heading.highlight {
+    background-color: #cc0000;
+    color: #fff;
+}
+.farbtoene-muster .panel-body {
+    padding: 0 15px;
+}
+.farbtoene-muster .col-md-6.col-sm-6.col-xs-12 {
+    padding: 0;
+}
+.farbtoene-muster .bs-example.col-md-6.col-sm-6.col-xs-12 {
+	padding: 0 15px;	
+}
+
+
+
+/*.farbtoene-muster .farbwahl.farbtoene_muster a strong {
+	color: #000;
+    margin: 5px 0 0;
+    font-weight: normal !important;
+    float: left;
+}*/
+
+form#formsearch_farbtoene-muster {
+	margin: 25px 15px;
+	position:relative
+}
+
+form#formsearch_farbtoene-muster.suche .btn.header {
+    top: 2px;
+    left: 0;
+    right: inherit;
+}
+form#formsearch_farbtoene-muster.suche input#search {
+    padding: 0px 10px 0px 35px;
+}
+
+.farbtoene-muster .farbwahl.farbtoene_muster a.col-md-3.col-sm-3.col-xs-3,
+.farbtoene-muster .farbtoene_muster a.col-md-3.col-sm-3.col-xs-3 {
+  /*  width: 20%;*/
+	padding: 5px;
+}
+
+.farbtoene-muster .flexslider3 {
+    margin: 0 0 40px;
+}
+}
+ @media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+/*.farbtoene-muster .farbwahl.farbtoene_muster span {
+    width: 62px;
+    height: 62px;
+    margin: 5px;
+    
+}
+
+
+.farbtoene-muster .farbwahl.farbtoene_muster a:nth-child(5n) span {
+	margin:5px -10px 5px 5px;}
+.farbtoene-muster .farbwahl.farbtoene_muster a:nth-child(6n) span {
+	margin:5px;}*/
+	
+	.farbtoene-muster .col-md-3.col-sm-4.farbwahl a span {
+    height: 85px;
+    width: 85px;
+}
+
+
+.farbtoene-muster ul.nav.nav-tabs.warenkorb li > a {
+    padding: 10px 5px;}
+}
+
+ @media (min-width: 992px) and (max-width: 993px) {
+
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+/*.farbtoene-muster .farbwahl.farbtoene_muster span {
+    width: 60px;
+    height: 60px;
+}*/
+
+.farbtoene-muster ul.nav.nav-tabs.warenkorb li > a {
+    padding: 10px 5px;
+    font-size: smaller;
+} 
+.farbtoene-muster .thumbnails_vertical .item {
+    height: 60px !important;
+    width: 89px !important;
+	margin-bottom: 18px;
+}
+.farbtoene-muster .thumbnails_vertical .owl-item:last-child .item {
+	margin-bottom: 0px;
+}
+.farbtoene-muster .slider_vertical .item {
+    height: 227px;
+}
+
+.farbtoene-muster .slider_vertical div.item img, .farbtoene-muster .thumbnails_vertical div.item img {
+    width: 100% !important;
+    max-width: 340px !important;
+    max-height: none !important;
+}
+.farbtoene-muster .col-md-3.col-sm-4.farbwahl a span {
+    height: 83px;
+    width: 83px;
+}
+}
+ @media (min-width: 1200px) {
+.farbtoene-muster .slider_vertical .item {
+    height: 270px;
+}
+
+.farbtoene-muster .thumbnails_vertical .item {
+    height: 77px !important;
+    width: 115px !important;
+	margin-bottom: 13px;
+}
+.farbtoene-muster .thumbnails_vertical .owl-item:last-child .item {
+	margin-bottom: 0px;
+}
+.farbtoene-muster .slider_vertical div.item img, .farbtoene-muster .thumbnails_vertical div.item img {
+    width: 100% !important;
+    max-width: 405px !important;
+    max-height: none !important;
+}
+ 
+}
+ @media (max-width: 1200px) {
+
+}
+@media (max-width: 1199px) {
+
+}
+ @media (min-width: 991px) {
+
+}
+@media (max-width: 992px) {
+ .farbtoene-muster .slider_vertical .item {
+    height: 100% !important;
+}
+.farbtoene-muster .thumbnails_vertical .item {
+    max-width: none;
+    max-height: none;
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+}
+ .farbtoene-muster .thumbnails_vertical div.item img,
+ .farbtoene-muster .slider_vertical div.item img {
+    max-height: none;
+    max-width: none;
+	padding: 0;
+    width: 100%;
+	height: 100% !important;
+	margin: auto;
+    position: relative;
+}	
+.farbtoene-muster .thumbnails_vertical .owl-item {
+    float: left;
+}
+.produktdetail.thumbnails .owl-item, .thumbnails_vertical .owl-item {
+    max-width: none;}
+
+.farbtoene-muster .farbwahl.farbtoene_muster a.col-md-2.col-sm-3.col-xs-3 {
+    width: 20%;
+}
+.farbtoene-muster .farbwahl a.col-md-2.col-sm-3.col-xs-3.active span {
+	margin: -2px;
+}
+.farbtoene-muster .farbwahl a.col-md-2.col-sm-3.col-xs-3.active:nth-child(6n) span {
+	margin: -2px;
+}
+.farbtoene-muster .farbwahl a.col-md-2.col-sm-3.col-xs-3.active:nth-child(5n) span {
+	margin: -1px;
+}
+
+.farbtoene-muster .flexslider3.steuerelemente > ul.flex-direction-nav {
+    width: 50%;
+
+}
+}
+@media (max-width: 768px) {
+.btn.col-md-6.col-sm-6.col-xs-12 {font-size: 22px;}
+
+}
+@media (max-width: 601px) {
+
+}
+@media (max-width: 480px) {
+#accordion.farbtoene-muster button#dropdownMenu1.btn-default i.fa.fa-angle-down.pull-right {
+    float: right !important;
+    margin-left: 0;
+}
+/*.btn.col-md-6.col-sm-6.col-xs-12 {
+    height: 43px;
+    padding: 10px !important;
+}*/
+.farbtoene-muster .flexslider3.steuerelemente .flex-control-paging li a {
+    margin: 5px;
+    /* width: 10px; */
+    /* height: 10px; */
+}
+}
+@media (max-width: 450px) {
+
+}
+@media (max-width: 400px) {
+.farbtoene-muster .flexslider3.steuerelemente > ul.flex-direction-nav {
+    width: 70%;
+}
+}
+@media (max-width: 380px) {
+
+
+}
+@media (max-width: 350px) {
+
+	
+}
+
+@media (max-width: 320px) {
+
+}

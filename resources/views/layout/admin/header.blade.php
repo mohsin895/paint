@@ -59,7 +59,7 @@
                     <!--begin::Menu wrapper-->
                     <div class="cursor-pointer symbol symbol-30px symbol-md-40px" data-kt-menu-trigger="click"
                         data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-                        <img src=""
+                        <img src="{{asset('public/assets/images/admin/profile/'.Auth::guard('admin')->user()->image)}}"
                             alt="user" />
                     </div>
                     <!--begin::User account menu-->
@@ -71,16 +71,16 @@
                                 <!--begin::Avatar-->
                                 <div class="symbol symbol-50px me-5">
                                     <img alt="Logo"
-                                        src="" />
+                                        src="{{asset('public/assets/images/admin/profile/'.Auth::guard('admin')->user()->image)}}" />
                                 </div>
                                 <!--end::Avatar-->
                                 <!--begin::Username-->
                                 <div class="d-flex flex-column">
                                     <div class="fw-bolder d-flex align-items-center fs-5">
-                                        mohsin
+                                        {{Auth::guard('admin')->user()->name}}
                                     </div>
                                     <a href="#"
-                                        class="fw-bold text-muted text-hover-primary fs-7"></a>
+                                        class="fw-bold text-muted text-hover-primary fs-7">{{Auth::guard('admin')->user()->email}}</a>
                                 </div>
                                 <!--end::Username-->
                             </div>
@@ -91,7 +91,7 @@
                         <!--end::Menu separator-->
                         <!--begin::Menu item-->
                         <div class="menu-item px-5">
-                            <a href="" class="menu-link px-5">My
+                            <a href="{{route('admin.account_setting')}}" class="menu-link px-5">My
                                 Profile</a>
                         </div>
 
@@ -99,7 +99,7 @@
                         <!--end::Menu item-->
                         <!--begin::Menu item-->
                         <div class="menu-item px-5 my-1">
-                            <a href="" class="menu-link px-5">Account
+                            <a href="{{route('admin.setting')}}" class="menu-link px-5">Account
                                 Settings</a>
                         </div>
 

@@ -28,5 +28,9 @@ class AppServiceProvider extends ServiceProvider
         view()->composer('*',function($settings){
             $settings->with('gs',DB::table('general_settings')->find(1));
         });
+
+        view()->composer('*',function($aboutus){
+            $aboutus->with('au',DB::table('aboutuses')->find(1));
+        });
     }
 }

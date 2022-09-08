@@ -7,7 +7,7 @@
 
         <li>
 
-            <a href="https://www.brillux.com/company/news/company/packaging-design-2022/">
+            <a href="#">
 
 
                 <img src="{{asset('public/assets/images/slider/large/'.$row->slider_image)}}"
@@ -23,11 +23,11 @@
 
 
                     <span class="h1">{{$row->slider_title}}</span>
-                    <span class="h2">The new packaging.</span>
+                    
 
-
-                    <a href="https://www.brillux.com/company/news/company/packaging-design-2022/"
-                        class="btn btn-default hidden-xs">..more <i class="fa fa-angle-right"></i></a>
+<!-- 
+                    <a href="#"
+                        class="btn btn-default hidden-xs">..more <i class="fa fa-angle-right"></i></a> -->
 
 
 
@@ -50,7 +50,7 @@
 
 
 <div class="container col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2 text-center lead mb50 mt50">
-    <h1>A perfect link</h1>
+    <h1 style="text-align:center">A perfect link</h1>
     <p>
     <p>Direct sales is the shortest link between our partners and us. We deliver quality directly. As a reliable
         manufacturer with complete product range and a wide range of services, we offer a perfect partnership
@@ -67,7 +67,7 @@ $category= App\Models\Category::find($row->category_id);
 @endphp
 
         <div class="as-panel">
-            <a href="/products/1001_paints-and-plasters/">
+            <a href="{{url('products',$category['slug'])}}">
 
 
 
@@ -95,8 +95,8 @@ $category= App\Models\Category::find($row->category_id);
 <div class="container-fluid">
     <div class=" mt50 mb30 teaser-wide grey clearfix">
 
-        <div class="col-md-3 col-xs-4 row"
-            style="background-image: url({{asset('public/assets/fileadmin/redaktion/bilder/startseite/teaser_startseite_produktcollage.png')}})">
+    <div class="col-md-3 col-xs-4 row"
+            style="background-image: url({{asset('public/assets/front-mage.jpeg')}})">
             <img src="{{asset('public/assets/templates/css/images/spacer.gif')}}" alt="{{$gs->site_title}} ..more than paint">
         </div>
 
@@ -106,24 +106,24 @@ $category= App\Models\Category::find($row->category_id);
                 <p>
                 <p>Products for every purpose. Perfectly coordinated systems. You can get all of this locally to
                     you in our branches. In addition to all this, we offer services that make you even stronger.
-                    Discover Brillux.</p>
+                    Discover {{$gs->site_title}}.</p>
                 </p>
 
-                <a href="/company/about-us/" class="btn btn-default">..more <i class="fa fa-angle-right"></i></a>
+
 
             </div>
         </div>
 
         <div class="col-md-5 hidden-xs hidden-sm"
             style="background-image: url({{asset('public/assets/fileadmin/redaktion/bilder/startseite/teaser-wide-brillux-scala-farbwelten.png')}});">
-            <img src="{{asset('public/assets/templates/css/images/spacer.gif')}}" alt="Brillux ..more than paint"></div>
+            <img src="{{asset('public/assets/templates/css/images/spacer.gif')}}" alt="{{$gs->website_name}} ..more than paint"></div>
 
     </div>
 </div>
 <div class="  teaser-half pull-left">
     <div class="col-md-5 col-xs-4 "
         style="background-image: url({{asset('public/assets/fileadmin/redaktion/bilder/aktuelles/teaser-aktuelles_BX_Showroom-121-Webnews_300x300.png')}})">
-        <a href="/company/news/"><img src="{{asset('public/assets/templates/css/images/spacer.gif')}}" alt=""></a></div>
+        <a href="#"><img src="{{asset('public/assets/templates/css/images/spacer.gif')}}" alt=""></a></div>
     <div class="col-md-7 col-xs-8">
         <div class="vertical-zentriert text-right">
             <h2>News</h2>
@@ -131,7 +131,7 @@ $category= App\Models\Category::find($row->category_id);
             <p>Keep up to date with the latest reports, trends and information on innovative products.</p>
             </p>
 
-            <a href="/company/news/" class="btn btn-default">..more <i class="fa fa-angle-right"></i></a>
+            <a href="{{url('company/news')}}" class="btn btn-default">..more <i class="fa fa-angle-right"></i></a>
 
         </div>
     </div>
@@ -139,17 +139,17 @@ $category= App\Models\Category::find($row->category_id);
 <div class="teaser-half pull-right">
     <div class="col-md-5 col-xs-4  pull-right"
         style="background-image: url({{asset('public/assets/fileadmin/redaktion/bilder/startseite/teaser_referenzen_startseite_300px.jpg')}})">
-        <a href="/service/references/"><img src="{{asset('public/assets/templates/css/images/spacer.gif')}}" alt=""></a>
+        <a href="#"><img src="{{asset('public/assets/templates/css/images/spacer.gif')}}" alt=""></a>
     </div>
     <div class="col-md-7 col-xs-8">
         <div class="vertical-zentriert">
-            <h2>References</h2>
+            <h2>Branches</h2>
             <p>
             <p>Variety in form and function: Single family home or industrial building, historical building
                 structure or modern nurseries.</p>
             </p>
 
-            <a href="/service/references/" class="btn btn-default">..more <i class="fa fa-angle-right"></i></a>
+            <a href="{{url('company/brances')}}" class="btn btn-default">..more <i class="fa fa-angle-right"></i></a>
 
         </div>
     </div>

@@ -257,7 +257,7 @@
                                         <div class="col-md-3 text-md-end">
                                             <!--begin::Label-->
                                             <label class="fs-6 fw-bold form-label mt-3">
-                                                <span class="required">Shop Title</span>
+                                                <span class="required">Company Title</span>
                                                 <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
                                                     title="Website  Shop Title"></i>
                                             </label>
@@ -267,6 +267,42 @@
                                             <!--begin::Input-->
                                             <input type="text" class="form-control form-control-solid" name="site_title"
                                                 value="{{$gs->site_title}}" />
+                                            <!--end::Input-->
+
+                                        </div>
+                                    </div>
+                                    <div class="row fv-row mb-7">
+                                        <div class="col-md-3 text-md-end">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold form-label mt-3">
+                                                <span class="required">Vat(%)</span>
+                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
+                                                    title="Website  Shop Title"></i>
+                                            </label>
+                                            <!--end::Label-->
+                                        </div>
+                                        <div class="col-md-9">
+                                            <!--begin::Input-->
+                                            <input type="text" class="form-control form-control-solid" name="vat"
+                                                value="{{$gs->vat}}" />
+                                            <!--end::Input-->
+
+                                        </div>
+                                    </div>
+                                    <div class="row fv-row mb-7">
+                                        <div class="col-md-3 text-md-end">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold form-label mt-3">
+                                                <span class="required">Shipping Charge</span>
+                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
+                                                    title="Website  Shop Title"></i>
+                                            </label>
+                                            <!--end::Label-->
+                                        </div>
+                                        <div class="col-md-9">
+                                            <!--begin::Input-->
+                                            <input type="text" class="form-control form-control-solid" name="shipping_charge"
+                                                value="{{$gs->shipping_charge}}" />
                                             <!--end::Input-->
 
                                         </div>
@@ -329,7 +365,46 @@
                                             <!--end::Input-->
                                         </div>
                                     </div>
+
+
+                                    <div class="row fv-row mb-7">
+                                        <div class="col-md-3 text-md-end">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold form-label mt-3">
+                                                <span>Corporate Office</span>
+                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
+                                                    title="Company address."></i>
+                                            </label>
+                                            <!--end::Label-->
+                                        </div>
+                                        <div class="col-md-9">
+                                            <!--begin::Input-->
+                                            <input type="text" class="form-control form-control-solid" name="company_address"
+                                                value="{{$gs->company_address}}" data-kt-ecommerce-settings-type="tagify" />
+                                            <!--end::Input-->
+                                        </div>
+                                    </div>
                                    
+
+
+                                    <div class="row fv-row mb-7">
+                                        <div class="col-md-3 text-md-end">
+                                            <!--begin::Label-->
+                                            <label class="fs-6 fw-bold form-label mt-3">
+                                                <span>Factory address</span>
+                                                <i class="fas fa-exclamation-circle ms-1 fs-7" data-bs-toggle="tooltip"
+                                                    title="Factory address."></i>
+                                            </label>
+                                            <!--end::Label-->
+                                        </div>
+                                        <div class="col-md-9">
+                                            <!--begin::Input-->
+                                            <input type="text" class="form-control form-control-solid" name="factory_address"
+                                                value="{{$gs->factory_address}}" data-kt-ecommerce-settings-type="tagify" />
+                                            <!--end::Input-->
+                                        </div>
+                                    </div>
+
 
                                     <div class="row fv-row mb-7">
                                         <div class="col-md-3 text-md-end">

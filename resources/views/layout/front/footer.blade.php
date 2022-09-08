@@ -13,7 +13,7 @@
                         <li><a href="#" target="_blank"><i
                                     class="fa fa-angle-right"></i> Industrial Coatings</a></li>
                         <li><a href="#" target="_self"><i class="fa fa-angle-right"></i>
-                                Brillux Design Award</a></li>
+                                {{$gs->site_title}} Design Award</a></li>
                     </ul>
                     <div class="socialmedia mt20"> <a title="Brillux op Facebook" target="_blank"
                             href="{{$gs->fb}}"><i class="fa fa-facebook"></i></a>

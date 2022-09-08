@@ -50,11 +50,14 @@ class SliderController extends Controller
             $slider->slider_title = $request->slider_title;
 
             if ($request->hasFile('slider_image')) {
+
+                if(!empty($slider->slider_image)){
                 $imagePath = public_path('assets/images/slider/'.$slider->slider_image);
             // dd($imagePath);
             if(File::exists($imagePath)){
                 unlink($imagePath);
             }
+        }
                 $image_tmp = $request->file('slider_image');
                 if ($image_tmp->isValid()) {
                     $extension = $image_tmp->getClientOriginalExtension();

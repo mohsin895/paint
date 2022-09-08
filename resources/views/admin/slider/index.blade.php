@@ -51,10 +51,10 @@
                         <!--begin::Search-->
                         <div class="d-flex align-items-center position-relative my-1">
                             <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                           
+
                             <!--end::Svg Icon-->
-                            
-                          
+
+
                         </div>
                         <!--end::Search-->
                     </div>
@@ -79,7 +79,7 @@
                         <thead>
                             <!--begin::Table row-->
                             <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
-                            <th class="w-10px pe-2">
+                                <th class="w-10px pe-2">
                                     <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
                                         <input class="form-check-input" type="hidden" data-kt-check="true"
                                             data-kt-check-target="#kt_ecommerce_category_table .form-check-input"
@@ -100,34 +100,42 @@
                             <!--begin::Table row-->
                             @foreach($slider as $row)
                             <tr>
-                            <td>
+                                <td>
+
                                     <div class="form-check form-check-sm form-check-custom form-check-solid">
                                         <input class="form-check-input" type="hidden" value="1" />
                                     </div>
                                 </td>
-                               
+
                                 <td>
-                                  
+
                                     {{$loop->index+1}}
-                                  
+
                                 </td>
-                            
                                 <td>
-                                    <div class="d-flex">
-                                     
-                                        <div class="ms-5">
-                                       
-                                            <a href="" class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
-                                                data-kt-ecommerce-category-filter="category_name">{{ $row->slider_title}}</a>
-                                          
-                                        </div>
-                                    </div>
+
+                                    
+                                <a href="#" class=" symbol symbol-50px" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_slider_edit{{$row->id}}">
+                                        <span class="symbol-label"
+                                            style="background-image:url({{asset('public/assets/images/slider/large/'.$row->slider_image)}}); width:300px;height:100px"></span>
+                                    </a>
                                 </td>
-                               
+
+                                <td>
+                                        <div class="ms-5">
+                                            <!--begin::Title-->
+                                <a href="#" class=" symbol symbol-50px" data-bs-toggle="modal"
+                                                data-bs-target="#kt_modal_slider_edit{{$row->id}}">{{$row->slider_title}}</a>
+                                            <!--end::Title-->
+                                        </div>
+                            
+                                </td>
+
                                 <td class="text-end">
                                     <a href="#" class="btn btn-sm btn-light btn-active-light-primary"
                                         data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
-                                     
+
                                         <span class="svg-icon svg-icon-5 m-0">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -136,28 +144,28 @@
                                                     fill="black" />
                                             </svg>
                                         </span>
-                                    
+
                                     </a>
-                                
+
                                     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4"
                                         data-kt-menu="true">
-                                      
+
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-bs-toggle="modal"
-                            data-bs-target="#kt_modal_slider_edit{{$row->id}}">Edit</a>
+                                                data-bs-target="#kt_modal_slider_edit{{$row->id}}">Edit</a>
                                         </div>
-                                      
+
                                         <div class="menu-item px-3">
                                             <a href="javascript:void(0)" record="slider" recordid="{{ $row->id }}"
                                                 class="menu-link px-3 confirmDelete">Delete</a>
                                         </div>
-                                     
+
                                     </div>
-                                  
+
                                 </td>
-                               
+
                             </tr>
-                          
+
                             @include('admin.modal.slider.create')
                             @endforeach
                             <!--end::Table row-->

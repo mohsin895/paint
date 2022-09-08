@@ -71,9 +71,9 @@
                     data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i
                         class="fa fa-share-square-o"></i></a>
                 <ul id="bxtoolbarmenu" class="dropdown-menu">
-                    <li id="bxtoolbarprint"><a href="javascript:window.print()"><i class="fa fa-print"></i>
-                            Print page</a></li>
-                    <li id="bxtoolbarmail"><a
+                    <!-- <li id="bxtoolbarprint"><a href="javascript:window.print()"><i class="fa fa-print"></i>
+                            Print page</a></li> -->
+                    <!-- <li id="bxtoolbarmail"><a
                             href="mailto:?subject=Website recommendation: Products&amp;body=Products%0d%0a%0ahttps://www.brillux.com/index.php?id=6097&cat=443075"><i
                                 class="fa fa-envelope-o"></i> Send by e-mail</a></li>
                     <li role="separator" class="divider"></li>
@@ -82,10 +82,10 @@
                                 title="Share on facebook"><i class="fa fa-facebook"></i></a><a
                                 href="https://twitter.com/home?status=www.brillux.com/index.php?id=6097&cat=443075"
                                 title="Share on twitter"><i class="fa fa-twitter"></i></a>
-                            <!--<a href="#"><i class="fa fa-share-alt"></i></a>--><a
+                            <a
                                 href="https://plus.google.com/share?url=www.brillux.com/index.php?id=6097&cat=443075"
                                 title="Share on Google+"><i class="fa fa-google-plus"></i></a>
-                        </span></li>
+                        </span></li> -->
                 </ul>
             </li>
         </ul>
@@ -95,7 +95,7 @@
 
     <div id="productcatalog-wrap">
         <div class=" container text-center lead mb50 mt50">
-            <h1 id="productlist_headline">Products</h1>
+            <h1 id="productlist_headline" style="text-align:center">Products</h1>
             <p id="freitextoben_text_7348">We can provide you with products and solutions for all kinds of jobs
                 and requirements. We offer you over 12,000 top quality products that are safe and economical to
                 use, including a wide range of interior and exterior paints, varnishes, woodstains and
@@ -105,25 +105,26 @@
                 brushes and masking materials to scaffolding, from mixing systems to mobile colorimeters.
             </p>
         </div>
-        <h2 class="container text-center lined-heading" id="brillux-produkte"><span>Products</span></h2>
+        <h2 class="container text-center lined-heading" id="brillux-produkte" style="text-align:center"><span>Category</span></h2>
 
         <div id="content" class="clear-block clearfix">
             <div id="productlist-wrap" class="container mb50">
                 @foreach($category as $cat)
                 <div id="productlistelem-5634" class="produkt col-md-3 col-xs-6 col">
                     <div class="ih-item square effect4"><a id="productlistelem-link-5634"
-                            href="{{url('products',$cat->slug)}}"><span
-                                class="img" id="productlistelem-imgwrap-5634"><img
-                                    alt="Enamel paints, varnishes and woodstains"
-                                    src="{{asset('public/assets/produkte/kat1/group_images/en/225px/lp_lacke.jpg')}}" /></span><span
+                            href="{{url('products',$cat->slug)}}"><span class="img"
+                                id="productlistelem-imgwrap-5634"><img alt="{{$cat->category_name}}"
+                                    src="{{asset('public/assets/images/category/'.$cat->category_image)}}" /></span><span
                                 class="mask1"></span> <span class="mask2"></span><span class="info"
-                                id="productlistelem-desc-5634"><span class="vertical-zentriert"><span class="h3">{{$cat->category_name}}</span><span class="p"><span
+                                id="productlistelem-desc-5634"><span class="vertical-zentriert"><span
+                                        class="h3">{{$cat->category_name}}</span><span class="p"><span
                                             class="clearfix red">..more <i
                                                 class="fa fa-angle-right"></i></span></span></span></span><span
-                                id="productlistelem-headline-5634" class="h2 text-center">{{$cat->category_name}}</span></a></div>
+                                id="productlistelem-headline-5634"
+                                class="h2 text-center">{{$cat->category_name}}</span></a></div>
                 </div>
                 @endforeach
-                
+
             </div>
 
 

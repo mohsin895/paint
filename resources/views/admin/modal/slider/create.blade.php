@@ -71,7 +71,7 @@
                             <!--begin::Image input-->
                             <div class="image-input image-input-empty image-input-outline mb-3"
                                 data-kt-image-input="true"
-                                style="@if(empty($row->id)) background-image: url(assets/media/svg/files/blank-image.svg) @else  background-image: url({{asset('public/assets/images/slider/'.$row->slider_image)}}) @endif" >
+                                style="@if(empty($row->id)) background-image: url(assets/media/svg/files/blank-image.svg) @else  background-image: url({{asset('public/assets/images/slider/large/'.$row->slider_image)}}) @endif" >
                                 <!--begin::Preview existing avatar-->
                                 <div class="image-input-wrapper w-400px h-150px"></div>
                                 <!--end::Preview existing avatar-->
@@ -81,7 +81,7 @@
                                     data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
                                     <i class="bi bi-pencil-fill fs-7"></i>
                                     <!--begin::Inputs-->
-                                    <input type="file" name="slider_image" multiple="" accept=".png, .jpg, .jpeg" required />
+                                    <input type="file" name="slider_image" multiple="" accept=".png, .jpg, .jpeg" @if(empty($row->id)) required  @else @endif/>
                                     <input type="hidden" name="avatar_remove" />
                                     <!--end::Inputs-->
                                 </label>

@@ -108,23 +108,31 @@
 		<script src="{{asset('public/assets/admin')}}/assets/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Page Vendors Javascript(used by this page)-->
-		<script src="{{asset('public/assets/admin')}}/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
-		<script src="{{asset('public/assets/admin')}}/assets/plugins/custom/datatables/datatables.bundle.js"></script>
+				<script src="{{asset('public/assets/admin')}}/assets/plugins/custom/datatables/datatables.bundle.js"></script>
 		<!--end::Page Vendors Javascript-->
 		<!--begin::Page Custom Javascript(used by this page)-->
 
 <script src="{{asset('public/assets/admin')}}/assets/js/custom/apps/ecommerce/catalog/products.js"></script>
 <script src="{{asset('public/assets/admin')}}/assets/js/custom/apps/ecommerce/customers/listing/add.js"></script>
+<script src="{{asset('public/assets/admin')}}/assets/js/custom/apps/ecommerce/customers/listing/listing.js"></script>
 		<script src="{{asset('public/assets/admin')}}/assets/js/widgets.bundle.js"></script>
 		<script src="{{asset('public/assets/admin')}}/assets/js/custom/widgets.js"></script>
 		<script src="{{asset('public/assets/admin')}}/assets/js/custom/apps/chat/chat.js"></script>
 		<script src="{{asset('public/assets/admin')}}/assets/js/custom/utilities/modals/upgrade-plan.js"></script>
 		<script src="{{asset('public/assets/admin')}}/assets/js/custom/utilities/modals/create-app.js"></script>
 		<script src="{{asset('public/assets/admin')}}/assets/js/custom/utilities/modals/users-search.js"></script>
+		
 		<!--end::Page Custom Javascript-->
 		<script src="{{asset('public/assets/admin')}}/assets/js/index.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 		<!--end::Javascript-->
+
+		<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+       $('.ckeditor').ckeditor();
+    });
+</script>
 	</body>
 	<!--end::Body-->
 </html>

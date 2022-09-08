@@ -61,8 +61,8 @@
                     <!--begin::Card toolbar-->
                     <div class="card-toolbar">
                         <!--begin::Add customer-->
-                        <a href="#" class="menu-link px-3 btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#kt_modal_module">{{$add_title}}</a>
+                        <!-- <a href="#" class="menu-link px-3 btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#kt_modal_module">{{$add_title}}</a> -->
 
                         <!--end::Add customer-->
                     </div>
@@ -136,8 +136,8 @@
                                         </div>
                                       
                                         <div class="menu-item px-3">
-                                            <a href="javascript:void(0)" record="module" recordid="{{ $row->id }}"
-                                                class="menu-link px-3 confirmDelete">Delete</a>
+                                            <!-- <a href="javascript:void(0)" record="module" recordid="{{ $row->id }}"
+                                                class="menu-link px-3 confirmDelete">Delete</a> -->
                                         </div>
                                      
                                     </div>

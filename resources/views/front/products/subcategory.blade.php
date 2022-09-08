@@ -83,12 +83,11 @@ $category = App\Models\Category::find($subcategory->category_id);
         <ul class="container nav navbar-nav">
 
             <li id="bxtoolbarmenuwrap" class="dropdown navbar-right"> <a href="#" class="dropdown-toggle"
-                    data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i
-                        class="fa fa-share-square-o"></i></a>
+                    data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                 <ul id="bxtoolbarmenu" class="dropdown-menu">
-                    <li id="bxtoolbarprint"><a href="javascript:window.print()"><i class="fa fa-print"></i>
-                            Print page</a></li>
-                    <li id="bxtoolbarmail"><a
+                    <!-- <li id="bxtoolbarprint"><a href="javascript:window.print()"><i class="fa fa-print"></i>
+                            Print page</a></li> -->
+                    <!-- <li id="bxtoolbarmail"><a
                             href="mailto:?subject=Website recommendation: Impregnations&amp;body=Impregnations%0d%0a%0ahttps://www.brillux.com/products/10771_impregnations/"><i
                                 class="fa fa-envelope-o"></i> Send by e-mail</a></li>
                     <li role="separator" class="divider"></li>
@@ -97,10 +96,10 @@ $category = App\Models\Category::find($subcategory->category_id);
                                 title="Share on facebook"><i class="fa fa-facebook"></i></a><a
                                 href="https://twitter.com/home?status=www.brillux.com/products/10771_impregnations/"
                                 title="Share on twitter"><i class="fa fa-twitter"></i></a>
-                            <!--<a href="#"><i class="fa fa-share-alt"></i></a>--><a
+                          <a
                                 href="https://plus.google.com/share?url=www.brillux.com/products/10771_impregnations/"
                                 title="Share on Google+"><i class="fa fa-google-plus"></i></a>
-                        </span></li>
+                        </span></li> -->
                 </ul>
             </li>
         </ul>
@@ -110,7 +109,7 @@ $category = App\Models\Category::find($subcategory->category_id);
 
     <div id="productcatalog-wrap">
         <div class=" container text-center lead mb50 mt50">
-            <h1 id="productlist_headline">{{$subcategory->subcat_name}}</h1>
+            <h1 id="productlist_headline" style="text-align:center">{{$subcategory->subcat_name}}</h1>
         </div>
         <h2 class="container text-center lined-heading" id="brillux-produkte"><span>Products</span></h2>
 
@@ -121,11 +120,10 @@ $category = App\Models\Category::find($subcategory->category_id);
                     <div class="ih-item square effect4"><a id="productlistelem-link-132437"
                             href="{{url('products',$row->slug)}}"><span
                                 id="productlistelem-imgwrap-132437" class="img"><img alt="{{$row->product_name}}"
-                                    src="{{asset('public/assets/produkte/kat1/prodimages/en/450px/BX_0250-0003-0000_SPK1.jpg')}}" /></span><span
+                                    src="{{asset('public/assets/images/product/'.$row->product_image)}}" style="height:200px;width:200px"/></span><span
                                 class="mask1"></span> <span class="mask2"></span><span class="info"
                                 id="productlistelem-desc-132437"><span class="vertical-zentriert"><span
-                                        class="h3">{{$row->product_name}}</span><span class="p">for
-                                        preventative protection against bluestain fungus, only for exterior
+                                        class="h3">{{$row->product_name}}</span><span class="p">{{$row->short_description}}
                                         use<span class="clearfix red">..more <i
                                                 class="fa fa-angle-right"></i></span></span></span></span><span
                                 id="productlistelem-headline-132437" class="h2 text-center">{{$row->product_name}}</span></a></div>

@@ -123,10 +123,10 @@
                         <!--begin::Card body-->
                         <div class="card-body text-center pt-0">
                             <!--begin::Image input-->
-                           
+                            @if(empty($product->id))
+
                             <div class="image-input image-input-empty image-input-outline mb-3"
-                                data-kt-image-input="true"
-                                style="background-image: url()">
+                                data-kt-image-input="true" style="background-image: url()">
                                 <!--begin::Preview existing avatar-->
                                 <div class="image-input-wrapper w-150px h-150px"></div>
                                 <!--end::Preview existing avatar-->
@@ -156,10 +156,9 @@
                                 </span>
                                 <!--end::Remove-->
                             </div>
-                            
+
                             <div class="image-input image-input-empty image-input-outline mb-3"
-                                data-kt-image-input="true"
-                                style="background-image: url()">
+                                data-kt-image-input="true" style="background-image: url()">
                                 <!--begin::Preview existing avatar-->
                                 <div class="image-input-wrapper w-150px h-150px"></div>
                                 <!--end::Preview existing avatar-->
@@ -189,10 +188,9 @@
                                 </span>
                                 <!--end::Remove-->
                             </div>
-                            
+
                             <div class="image-input image-input-empty image-input-outline mb-3"
-                                data-kt-image-input="true"
-                                style="background-image: url()">
+                                data-kt-image-input="true" style="background-image: url()">
                                 <!--begin::Preview existing avatar-->
                                 <div class="image-input-wrapper w-150px h-150px"></div>
                                 <!--end::Preview existing avatar-->
@@ -222,10 +220,9 @@
                                 </span>
                                 <!--end::Remove-->
                             </div>
-                            
+
                             <div class="image-input image-input-empty image-input-outline mb-3"
-                                data-kt-image-input="true"
-                                style="background-image: url()">
+                                data-kt-image-input="true" style="background-image: url()">
                                 <!--begin::Preview existing avatar-->
                                 <div class="image-input-wrapper w-150px h-150px"></div>
                                 <!--end::Preview existing avatar-->
@@ -255,10 +252,9 @@
                                 </span>
                                 <!--end::Remove-->
                             </div>
-                            
+
                             <div class="image-input image-input-empty image-input-outline mb-3"
-                                data-kt-image-input="true"
-                                style="background-image: url()">
+                                data-kt-image-input="true" style="background-image: url()">
                                 <!--begin::Preview existing avatar-->
                                 <div class="image-input-wrapper w-150px h-150px"></div>
                                 <!--end::Preview existing avatar-->
@@ -288,8 +284,50 @@
                                 </span>
                                 <!--end::Remove-->
                             </div>
-                            
-                           
+
+                            @else
+                            @php
+                            $gallery = App\Models\ImageGallery::where('product_id',$product->id)->get();
+
+                            @endphp
+                            @foreach($gallery as $image)
+                            <div class="image-input image-input-empty image-input-outline mb-3"
+                                data-kt-image-input="true"
+                                style="background-image: url({{asset('public/assets/images/product/gallery/'.$image->gallery)}})">
+                                <!--begin::Preview existing avatar-->
+                                <div class="image-input-wrapper w-150px h-150px"></div>
+                                <!--end::Preview existing avatar-->
+                                <!--begin::Label-->
+                                <label
+                                    class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="change" data-bs-toggle="tooltip" title="Change avatar">
+                                    <i class="bi bi-pencil-fill fs-7"></i>
+                                    <!--begin::Inputs-->
+                                    <input type="file" name="gallery[]" accept=".png, .jpg, .jpeg" />
+                                    <input type="hidden" name="avatar_remove" />
+                                    <!--end::Inputs-->
+                                </label>
+                                <!--end::Label-->
+                                <!--begin::Cancel-->
+                                <span
+                                    class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="cancel" data-bs-toggle="tooltip" title="Cancel avatar">
+                                    <i class="bi bi-x fs-2"></i>
+                                </span>
+                                <!--end::Cancel-->
+                                <!--begin::Remove-->
+                                <span
+                                    class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                    data-kt-image-input-action="remove" data-bs-toggle="tooltip" title="Remove avatar">
+                                    <i class="bi bi-x fs-2"></i>
+                                </span>
+                                <!--end::Remove-->
+                            </div>
+                            @endforeach
+
+                            @endif
+
+
 
 
                             <!--end::Image input-->
@@ -340,20 +378,23 @@
                                                 <label class="required form-label">Category</label>
                                                 <!--end::Label-->
                                                 <!--begin::Select2-->
-                                                <select class="form-select mb-2" name="category_id" id="category_id" data-control="select2"
-                                                data-allow-clear="true" data-placeholder="Select an option">
+                                                <select class="form-select mb-2" name="category_id" id="category_id"
+                                                    data-control="select2" data-allow-clear="true"
+                                                    data-placeholder="Select an option">
                                                     <option></option>
                                                     @foreach($category as $cat)
-                                                    <option value="{{$cat->id}}" @if(!empty($product->id))@if($cat->id==$product->category_id) selected="" @endif   @else @endif>{{$cat->category_name}}</option>
+                                                    <option value="{{$cat->id}}" @if(!empty($product->
+                                                        id))@if($cat->id==$product->category_id) selected="" @endif
+                                                        @else @endif>{{$cat->category_name}}</option>
                                                     @endforeach
-                                                
+
                                                 </select>
                                                 <!--end::Select2-->
                                                 <!--begin::Description-->
                                                 <!-- <div class="text-muted fs-7">Set the product Category.</div> -->
                                                 <!--end::Description-->
                                             </div>
-                                           
+
 
 
                                             <div class="fv-row w-100 flex-md-root">
@@ -361,12 +402,17 @@
                                                 <label class="required form-label">Sub Category</label>
                                                 <!--end::Label-->
                                                 <!--begin::Select2-->
-                                                <select class="form-select mb-2" name="subcategory_id" id="subcategory_id" data-control="select2"
-                                                data-allow-clear="true" data-placeholder="Select an option">
-                                                <option></option>
-                                                    @foreach($subcategory as $subcat)
-                                                    <option value="{{$subcat->id}}" disabled @if(!empty($product->id))@if($subcat->id==$product->subcategory_id) selected="" @endif   @else @endif>{{$subcat->subcat_name}}</option>
+                                                <select class="form-select mb-2" name="subcategory_id"
+                                                    id="subcategory_id" data-control="select2" data-allow-clear="true"
+                                                    data-placeholder="Select an option">
+                                                    <option></option>
+                                                    @if(!empty($product->id))
+                                                    @foreach($subcategorypr as $subcatpr)
+                                                    <option value="{{$subcatpr->id}}" @if($subcatpr->
+                                                        id==$product->subcategory_id) selected=""
+                                                        @endif>{{$subcatpr->subcat_name}}</option>
                                                     @endforeach
+                                                    @endif
                                                 </select>
                                                 <!--end::Select2-->
                                                 <!--begin::Description-->
@@ -390,8 +436,99 @@
                                                 be unique.</div>
                                             <!--end::Description-->
                                         </div>
+                                        <div class="mb-10 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="required form-label">Product Color</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input type="text" name="color" class="form-control mb-2"
+                                                @if(empty($product->id)) placeholder="Product Color" @else
+                                            value="{{$product->color}}" @endif />
+                                            <!--end::Input-->
+                                          
+                                        </div>
+
+                                        <div class="mb-10 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="required form-label">Product Color Code</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input type="text" name="color_code" class="form-control mb-2"
+                                                @if(empty($product->id)) placeholder="Product Color Code" @else
+                                            value="{{$product->color_code}}" @endif  />
+                                            <!--end::Input-->
+                                          
+                                        </div>
+
+                                        <div class="mb-10 fv-row">
+                                            <!--begin::Label-->
+                                            <label class="required form-label">Selling Price</label>
+                                            <!--end::Label-->
+                                            <!--begin::Input-->
+                                            <input type="text" name="selling_price" class="form-control mb-2"
+                                                @if(empty($product->id)) placeholder="Product Seling Price" @else
+                                            value="{{$product->selling_price}}" @endif />
+                                            <!--end::Input-->
+                                            <!--begin::Description-->
+                                            <div class="text-muted fs-7">A product name is required and recommended to
+                                                be unique.</div>
+                                            <!--end::Description-->
+                                        </div>
                                         <!--end::Input group-->
                                         <!--begin::Input group-->
+
+                                        <div class="mb-10 fv-row">
+                                            <input type="hidden" class="form-control" name="product_id"
+                                                id="product_id" />
+                                            <label class="col-form-label text-right col-lg-3 col-sm-12">Product
+                                                Attribute *</label>
+                                            <div class="col-lg-9 col-md-9 col-sm-12">
+                                                <div class="field_wrapper">
+                                                @if(empty($product->id))
+                                                    <div class="d-flex" style="justify-content: space-between">
+                                                        
+                                                        <input class="form-control" type="text" name="sku[]" id="sku"
+                                                            placeholder="SKU" style="width: 120px" />
+                                                        <input class="form-control" type="text" name="size[]" id="size"
+                                                            placeholder="Size" style="width: 120px" />
+                                                        <input class="form-control" type="number" name="price[]"
+                                                            id="price" placeholder="Price" style="width: 120px" />
+                                                        <input class="form-control" type="number" name="stock[]"
+                                                            id="stock" placeholder="Stock" style="width: 120px" />
+                                                        <a href="javascript:void(0);" class="add_button"
+                                                            title="Add field">Add Size</a>
+                                </div>
+                                                        @else
+                                                        @php
+                                                        $attribute=
+                                                        App\Models\ProductAttribute::where('product_id',$product->id)->get();
+
+                                                        @endphp
+                                                        @foreach($attribute as $attr)
+                                                        <div class="d-flex" style="justify-content: space-between">
+
+                                                        <input class="form-control" type="text" name="sku[]" id="sku"
+                                                            placeholder="SKU" value="{{$attr->sku}}" style="width: 120px" />
+                                                        <input class="form-control" type="text" name="size[]" id="size"
+                                                            placeholder="Size" value="{{$attr->size}}" style="width: 120px" />
+                                                        <input class="form-control" type="number" name="price[]"
+                                                            id="price" value="{{$attr->price}}" placeholder="Price" style="width: 120px" />
+                                                        <input class="form-control" type="number" name="stock[]"
+                                                            id="stock" value="{{$attr->stock}}" placeholder="Stock" style="width: 120px" />
+                                                            
+                                </div>
+                                <br>
+
+                                                        @endforeach
+
+                                      
+                                                        @endif
+                                                        
+                                                    
+                                                </div>
+
+                                            </div>
+                                        </div>
 
 
                                         <div class="mb-10 fv-row">
@@ -399,8 +536,7 @@
                                             <label class="required form-label">Short Description</label>
                                             <!--end::Label-->
                                             <!--begin::Input-->
-                                            <textarea type="text" name="short_description" class="form-control mb-2"
-                                                 >  @if(empty($product->id))  @else
+                                            <textarea type="text" name="short_description" class="form-control mb-2">  @if(empty($product->id))  @else
                                             {{$product->short_description}} @endif</textarea>
                                             <!--end::Input-->
                                             <!--begin::Description-->
@@ -413,9 +549,8 @@
                                             <label class="form-label">Description</label>
                                             <!--end::Label-->
                                             <!--begin::Editor-->
-                                            <div id="kt_ecommerce_add_product_description"
-                                                name="kt_ecommerce_add_product_description" class="min-h-200px mb-2">
-                                            </div>
+                                            <textarea type="text" name="description" class="ckeditor form-control mb-2">  @if(empty($product->id))  @else
+                                            {{$product->description}} @endif</textarea>
                                             <!--end::Editor-->
                                             <!--begin::Description-->
                                             <div class="text-muted fs-7">Set a description to the product for better
@@ -425,19 +560,17 @@
 
 
 
-
+<!-- 
                                         <div class="mb-10 fv-row">
-                                            <!--begin::Label-->
+                                           
                                             <label class="required form-label">Data Sheets</label>
-                                            <!--end::Label-->
-                                            <!--begin::Input-->
-                                            <input type="file" name="data_sheets[]" class="form-control mb-2" multiple />
-                                            <!--end::Input-->
-                                            <!--begin::Description-->
+                                        
+                                            <input type="file" name="data_sheets[]" class="form-control mb-2"
+                                                multiple />
                                             <div class="text-muted fs-7">A product name is required and recommended to
                                                 be unique.</div>
-                                            <!--end::Description-->
-                                        </div>
+                                       
+                                        </div> -->
                                         <!--end::Input group-->
                                     </div>
                                     <!--end::Card header-->
@@ -478,10 +611,7 @@
         </div>
         <!--end::Container-->
     </div>
-    <!--end::Post-->
-</div>
-
-
+    <!-- end::Post -->
 <script type="text/javascript">
 $(function() {
     $(document).on('change', '#category_id', function() {

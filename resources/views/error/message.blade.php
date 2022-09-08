@@ -14,7 +14,7 @@
     <strong>{{ session('flash_message_error') }}</strong>
 </div> -->
 
-<div class="alert alert-danger" role="alert" style="color:red">
+<div class="alert alert-danger" role="alert" style="color:red;text-align:center">
   <strong style="color:white">{{ session('flash_message_error') }}</strong> 
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
@@ -30,7 +30,7 @@
     <strong>{{ session('flash_message_error') }}</strong>
 </div> -->
 
-<div class="alert alert-danger" role="alert" style="color:red">
+<div class="alert alert-danger" role="alert" style="color:red;text-align:center">
   <strong style="color:red"><a href="">{{ session('flash_message_forget') }}</a></strong> 
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
@@ -41,9 +41,9 @@
 
 
 @if(Session::has('flash_message_success'))
-<div class="alert alert-success ">
+<div class="alert alert-success " style="text-align:center">
 	<button type="button" class="btn close" data-dismiss="alert">×</button>
-        <strong>{{ session('flash_message_success') }}</strong>
+        <strong >{{ session('flash_message_success') }}</strong>
 </div>
 
 @endif

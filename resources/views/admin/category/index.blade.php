@@ -51,9 +51,9 @@
                         <!--begin::Search-->
                         <div class="d-flex align-items-center position-relative my-1">
                             <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
-                           
+
                             <!--end::Svg Icon-->
-                          
+
                         </div>
                         <!--end::Search-->
                     </div>
@@ -82,6 +82,7 @@
                                 <th class="min-w-150px">SL No</th>
                                 <th class="min-w-150px">Module Name</th>
                                 <th class="min-w-150px">Category Name</th>
+                                <th class="min-w-150px">Category Image</th>
                                 <th class="text-end min-w-70px">Actions</th>
                             </tr>
                             <!--end::Table row-->
@@ -92,40 +93,50 @@
                         <tbody class="fw-bold text-gray-600">
                             <!--begin::Table row-->
                             @foreach($category as $row)
-                            @php 
+                            @php
                             $Categorymodule = App\Models\Module::find($row->module_id);
-                         
+
                             @endphp
                             <tr>
 
-                               
+
                                 <td>
-                                  
+
                                     {{$loop->index+1}}
-                                  
+
                                 </td>
 
                                 <td>
-                         @if(!empty($Categorymodule)) {{ $Categorymodule->module_name}} @else @endif
-                                  
+                                    @if(!empty($Categorymodule)) {{ $Categorymodule->module_name}} @else @endif
+
                                 </td>
-                            
+
                                 <td>
                                     <div class="d-flex">
-                                     
+
                                         <div class="ms-5">
-                                       
+
                                             <a href="" class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                 data-kt-ecommerce-category-filter="category_name">{{ $row->category_name}}</a>
-                                          
+
                                         </div>
                                     </div>
                                 </td>
-                               
+
+                                <td>
+
+
+                                    <a href="#" class=" symbol symbol-50px" data-bs-toggle="modal"
+                                        data-bs-target="#kt_modal_category_edit{{$row->id}}">
+                                        <span class="symbol-label"
+                                            style="background-image:url({{asset('public/assets/images/category/'.$row->category_image)}}); width:300px;height:100px"></span>
+                                    </a>
+                                </td>
+
                                 <td class="text-end">
                                     <a href="#" class="btn btn-sm btn-light btn-active-light-primary"
                                         data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">Actions
-                                     
+
                                         <span class="svg-icon svg-icon-5 m-0">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -134,28 +145,28 @@
                                                     fill="black" />
                                             </svg>
                                         </span>
-                                    
+
                                     </a>
-                                
+
                                     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4"
                                         data-kt-menu="true">
-                                      
+
                                         <div class="menu-item px-3">
                                             <a href="#" class="menu-link px-3" data-bs-toggle="modal"
-                            data-bs-target="#kt_modal_category_edit{{$row->id}}">Edit</a>
+                                                data-bs-target="#kt_modal_category_edit{{$row->id}}">Edit</a>
                                         </div>
-                                      
+
                                         <div class="menu-item px-3">
                                             <a href="javascript:void(0)" record="category" recordid="{{ $row->id }}"
                                                 class="menu-link px-3 confirmDelete">Delete</a>
                                         </div>
-                                     
+
                                     </div>
-                                  
+
                                 </td>
-                               
+
                             </tr>
-                          
+
                             @include('admin.modal.category.create')
                             @endforeach
                             <!--end::Table row-->

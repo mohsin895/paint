@@ -39,9 +39,9 @@
 
 
 
-            <img src="{{asset('public/assets/fileadmin/_processed_/7/6/csm_header_produkte-neutral_beton_e2c94c316e.jpg')}}"
-                srcset="{{asset('public/assets/fileadmin/_processed_/7/6/csm_header_produkte-neutral_beton_e2c94c316e.jpg')}} 1600w,{{asset('public/assets/fileadmin/_processed_/7/6/csm_header_produkte-neutral_beton_3caa9ef798.jpg')}} 350w,{{asset('public/assets/fileadmin/_processed_/7/6/csm_header_produkte-neutral_beton_9921bb50ab.jpg')}} 480w,{{asset('public/assets/fileadmin/_processed_/7/6/csm_header_produkte-neutral_beton_a5d5124228.jpg')}} 767w,{{asset('public/assets/fileadmin/_processed_/7/6/csm_header_produkte-neutral_beton_16e4ec54a7.jpg')}} 992w,{{asset('public/assets/fileadmin/_processed_/7/6/csm_header_produkte-neutral_beton_a701b15768.jpg')}} 1200w,{{asset('public/assets/fileadmin/redaktion/bilder/produkte/header_produkte-neutral_beton.jpg')}} 1600w"
-                sizes="100vw" alt="Products">
+        <img src="{{asset('public/assets/fileadmin/_processed_/3/a/csm_abb-farbtoene-muster-boden_62eed88761.jpg')}}"
+                srcset="{{asset('public/assets/fileadmin/_processed_/3/a/csm_abb-farbtoene-muster-boden_62eed88761.jpg')}} 1600w,{{asset('public/assets/fileadmin/_processed_/3/a/csm_abb-farbtoene-muster-boden_62eed88761.jpg')}} 350w,{{asset('public/assets/fileadmin/_processed_/3/a/csm_abb-farbtoene-muster-boden_62eed88761.jpg')}} 480w,{{asset('public/assets/fileadmin/_processed_/3/a/csm_abb-farbtoene-muster-boden_62eed88761.jpg')}} 767w,{{asset('public/assets/fileadmin/_processed_/3/a/csm_abb-farbtoene-muster-boden_62eed88761.jpg')}} 992w,{{asset('public/assets/fileadmin/_processed_/3/a/csm_abb-farbtoene-muster-boden_62eed88761.jpg')}} 1200w,{{asset('public/assets/fileadmin/_processed_/3/a/csm_abb-farbtoene-muster-boden_62eed88761.jpg')}} 1600w"
+                sizes="100vw" alt="Floor">
 
 
 
@@ -75,24 +75,23 @@
         <ul class="container nav navbar-nav">
 
             <li id="bxtoolbarmenuwrap" class="dropdown navbar-right"> <a href="#" class="dropdown-toggle"
-                    data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i
-                        class="fa fa-share-square-o"></i></a>
+                    data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
                 <ul id="bxtoolbarmenu" class="dropdown-menu">
-                    <li id="bxtoolbarprint"><a href="javascript:window.print()"><i class="fa fa-print"></i>
-                            Print page</a></li>
-                    <li id="bxtoolbarmail"><a
+                    <!-- <li id="bxtoolbarprint"><a href="javascript:window.print()"><i class="fa fa-print"></i>
+                            Print page</a></li> -->
+                    <!-- <li id="bxtoolbarmail"><a
                             href="mailto:?subject=Website recommendation: Enamel%20paints%2C%20varnishes%20and%20woodstains&amp;body=Enamel%20paints%2C%20varnishes%20and%20woodstains%0d%0a%0ahttps://www.brillux.com/products/5634_enamel-paints-varnishes-and-woodstains/"><i
-                                class="fa fa-envelope-o"></i> Send by e-mail</a></li>
-                    <li role="separator" class="divider"></li>
+                                class="fa fa-envelope-o"></i> Send by e-mail</a></li> -->
+                    <!-- <li role="separator" class="divider"></li>
                     <li><span>Share:</span> <span class="socialmedia"><a target="_blank"
                                 href="https://www.facebook.com/sharer/sharer.php?u=www.brillux.com/products/5634_enamel-paints-varnishes-and-woodstains/"
                                 title="Share on facebook"><i class="fa fa-facebook"></i></a><a
                                 href="https://twitter.com/home?status=www.brillux.com/products/5634_enamel-paints-varnishes-and-woodstains/"
                                 title="Share on twitter"><i class="fa fa-twitter"></i></a>
-                            <!--<a href="#"><i class="fa fa-share-alt"></i></a>--><a
+                            <a
                                 href="https://plus.google.com/share?url=www.brillux.com/products/5634_enamel-paints-varnishes-and-woodstains/"
                                 title="Share on Google+"><i class="fa fa-google-plus"></i></a>
-                        </span></li>
+                        </span></li> -->
                 </ul>
             </li>
         </ul>
@@ -102,9 +101,9 @@
 
     <div id="productcatalog-wrap">
         <div class=" container text-center lead mb50 mt50">
-            <h1 id="productlist_headline">{{$category->category_name}}</h1>
+            <h1 id="productlist_headline" style="text-align:center">{{$category->category_name}}</h1>
             <p id="freitextoben_text_16642">Whether it be iron, steel, zinc, coil-coating, wood, plastic or old
-                coats: substrates are diverse. The Brillux product range offers you perfectly coordinated
+                coats: substrates are diverse. The {{$gs->website_name}} product range offers you perfectly coordinated
                 systems for high-quality coatings, even under demanding conditions. Top-class wood protection
                 products with woodstains and a topcoat are just as much part of our product range as water-based
                 quality products from the Lacryl-PU or Hydro-PU series, the aromatics-free Impredur enamel paint
@@ -122,7 +121,7 @@
                     <div class="ih-item square effect4"><a id="productlistelem-link-10771"
                             href="{{url('products',$subcat->slug)}}"><span class="img"
                                 id="productlistelem-imgwrap-10771"><img alt="Impregnations"
-                                    src="{{asset('public/assets/produkte/kat1/group_images/en/225px/lp_lacke_impraegnierung2.jpg')}}" /></span><span
+                                    src="{{asset('public/assets/images/subcategory/'.$subcat->subcategory_image)}}" /></span><span
                                 class="mask1"></span> <span class="mask2"></span><span class="info"
                                 id="productlistelem-desc-10771"><span class="vertical-zentriert"><span
                                         class="h3"><?php echo $subcat->subcat_name; ?></span><span class="p"><span class="clearfix red">..more

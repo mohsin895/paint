@@ -1,4 +1,3 @@
-
 @php
 $products = App\Models\Module::where('id',1)->first();
 $color = App\Models\Module::where('id',2)->first();
@@ -39,23 +38,9 @@ $colorcategory= App\Models\Category::where('module_id','2')->get();
     <form onsubmit="bxAddFieldForProductSearch('search','swordforproductsearch1')" action="/search/" method="post"
         name="formsearch" id="formsearch" class="suche"><input name="tx_indexedsearch_pi2[search][sword]" id="search"
             autocomplete="off" type="text" placeholder="Search" class="form-control header"><button
-            id="navbar-btnsearch" type="submit" class="btn header"> <i class="fa fa-search"></i> </button>
-        <input type="hidden" name="tx_indexedsearch_pi2[search][_sections]" value="0">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][_freeIndexUid]" value="_">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][pointer]" value="0">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][ext]" value="">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][searchType]" value="1">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][defaultOperand]" value="0">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][mediaType]" value="-1">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][sortOrder]" value="rank_flag">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][group]" value="">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][languageUid]" value="0">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][desc]" value="">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][numberOfResults]" value="10">
-        <input type="hidden" name="tx_indexedsearch_pi2[search][extendedSearch]" value="">
-        <input type="hidden" name="tx_indexedsearch_pi2[action]" value="search">
-        <input type="hidden" name="tx_indexedsearch_pi2[controller]" value="Search">
-        <input id='swordforproductsearch1' type="hidden" name="sword" value="">
+            id="navbar-btnsearch" type="submit" class="btn header">
+            <i class="fa fa-search" style="margin-left: 90%;margin-top: 8px"></i> </button>
+
 
     </form>
 

@@ -6,7 +6,10 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\User;
+use Auth;
+use Session;
 use Hash;
+use Image;
 use Mail;
 
 class AdminController extends Controller
@@ -33,7 +36,7 @@ class AdminController extends Controller
 
        } else {
            //validations are passed try login using laravel auth attemp
-           if (\Auth::attempt($request->only(["email", "password"]))) {
+           if (\Auth::guard('admin')->attempt($request->only(["email", "password"]))) {
                return response()->json(["status"=>true,"redirect_location"=>url("admin/dashboard")]);
                
            } else {
@@ -51,8 +54,8 @@ class AdminController extends Controller
 
    function logout()
    {
-       \Auth::logout();
-       return redirect("admin/login")->with('success', 'Logout successfully');;
+       \Auth::guard('admin')->logout();
+       return redirect("/")->with('success', 'Logout successfully');;
    }
 
 
@@ -84,4 +87,114 @@ class AdminController extends Controller
        }
        return view('admin.forget_password');
    }
+
+
+
+
+public function account_setting()
+{
+ $data['title']="Admin Dashboard";
+ $data['table']="Account Setting";
+ $data['add']="Account";
+ $data['add_title'] = "Add banner";
+ return view('admin.account',$data);
+}
+
+public function setting()
+{
+ $data['title']="Admin Dashboard";
+ $data['table']="Account Setting";
+ $data['add']="Account";
+ $data['add_title'] = "Add banner";
+ return view('admin.setting',$data);
+}
+  
+
+ public function account_update(Request $request)
+ {
+   $admin_id = Auth::guard('admin')->user()->id;
+   if ($request->isMethod('post')) {
+     $data = $request->all();
+     //  dd($data);
+
+     $admin = User::find($admin_id);
+     $admin->name = $data['name'];
+     
+     $admin->email = $data['email'];
+     $admin->phone = $data['phone'];
+     if ($request->hasFile('image')) {
+       $image_tmp = $request->file('image');
+       if ($image_tmp->isValid()) {
+         $extension = $image_tmp->getClientOriginalExtension();
+         $filename = rand(111, 99999) . '.' . $extension;
+         $large_image_path = 'public/assets/images/admin/profile/' . $filename;
+
+         Image::make($image_tmp)->resize(600, 600)->save($large_image_path);
+         $admin->image = $filename;
+       }
+     }
+     $admin->save();
+     return redirect()->back()->with('flash_message_success', 'Profile Update Successfully!!');
+   }
+ }
+
+ 
+
+ public function password_setting()
+ {
+   $adminPassword = User::where(['email' => Auth::guard('admin')->user()->email])->first();
+   // echo "<pre>";print_r($adminDetails);die;
+   return view('admin.admin_password', compact('adminPassword'));
+ }
+ public function checkPass(Request $request)
+ {
+   $data = $request->all();
+
+   $user = User::find(Auth::guard('admin')->user()->id);
+
+
+   if (!Hash::check($data['current_pwd'], $user->password)) {
+     echo "false";
+     die;
+   } else {
+     echo "true";
+     die;
+   }
+ }
+
+
+ public function updatePassword(Request $request)
+
+ {
+
+   $request->validate([
+
+     'new_password' => ['required'],
+     'confirm_password' => ['same:new_password'],
+   ]);
+
+   if ($request->isMethod('post')) {
+     $data = $request->all();
+
+     $admin_id = Auth::guard('admin')->user()->id;
+
+     $userDetails = User::find($admin_id);
+     // echo"<pre>";print_r($userDetails);die();
+
+
+     if (!Hash::check($data['current_pwd'], $userDetails['password'])) {
+       return redirect()->route('admin.password.setting')->with('flash_message_error', ' Current password in not match ');
+     } else {
+
+
+       $userDetails->password = Hash::make($data['new_password']);
+
+       $userDetails->save();
+       return redirect()->route('admin.password.setting')->with('flash_message_success', ' Password update Successfully');
+     }
+   }
+ }
+
+
+
 }

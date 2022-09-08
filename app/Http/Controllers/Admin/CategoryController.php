@@ -18,8 +18,20 @@ class CategoryController extends Controller
         $data['table'] = "Category";
         $data['add_title'] = "Category Add";
         $data['edit_title'] = "Category Edit";
-        $data['module'] = Module::get();
-        $data['category'] = Category::orderBy('module_id','desc')->get();
+        $data['module'] = Module::where('id',1)->orWhere('id',3)->get();
+        $data['category'] = Category::orderBy('module_id','desc')->where('module_id',1)->get();
+       return view('admin.category.index',$data);
+    }
+
+
+    public function application()
+    {
+        $data['title'] = "Admin Dashboard";
+        $data['table'] = "Category";
+        $data['add_title'] = "Category Add";
+        $data['edit_title'] = "Category Edit";
+        $data['module'] = Module::where('id',1)->orWhere('id',3)->get();
+        $data['category'] = Category::orderBy('module_id','desc')->where('module_id',3)->get();
        return view('admin.category.index',$data);
     }
 
@@ -29,7 +41,7 @@ class CategoryController extends Controller
             $category = new Category();
             $category->module_id = $request->module_id;
             $category->category_name = $request->category_name;
-            $category->slug = Str::slug($request->category_name);
+            $category->slug = Str::slug($request->category_name).'-'.rand(111, 99999);
 
            
             if ($request->hasFile('category_image')) {
@@ -39,7 +51,7 @@ class CategoryController extends Controller
                     $filename = rand(111, 99999) . '.' . $extension;
                     $large_image_path = 'public/assets/images/category/' . $filename;
     
-                    Image::make($image_tmp)->resize(1230, 370)->save($large_image_path);
+                    Image::make($image_tmp)->resize(600, 800)->save($large_image_path);
                     $category->category_image = $filename;
                 }
             }
@@ -51,21 +63,23 @@ class CategoryController extends Controller
             $category = Category::find($id);
             $category->module_id = $request->module_id;
             $category->category_name = $request->category_name;
-            $category->slug = Str::slug($request->category_name);
+            $category->slug = Str::slug($request->category_name).'-'.rand(111, 99999) ;
 
             if ($request->hasFile('category_image')) {
+                if(!empty($category->category_image)){
                 $imagePath = public_path('assets/images/category/'.$category->category_image);
-            // dd($imagePath);
+            //  dd($imagePath);
             if(File::exists($imagePath)){
                 unlink($imagePath);
             }
+        }
                 $image_tmp = $request->file('category_image');
                 if ($image_tmp->isValid()) {
                     $extension = $image_tmp->getClientOriginalExtension();
                     $filename = rand(111, 99999) . '.' . $extension;
                     $large_image_path = 'public/assets/images/category/' . $filename;
     
-                    Image::make($image_tmp)->resize(1230, 370)->save($large_image_path);
+                    Image::make($image_tmp)->resize(600, 800)->save($large_image_path);
                     $category->category_image = $filename;
                 }
             }

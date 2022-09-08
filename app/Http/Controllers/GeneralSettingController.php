@@ -17,10 +17,14 @@ class GeneralSettingController extends Controller
             // dd($data);
             $setting = GeneralSetting::latest()->first();
             $setting->email = $data['email'];
+            $setting->company_address = $data['company_address'];
+            $setting->factory_address = $data['factory_address'];
           
             $setting->mobile = $data['mobile'];
             $setting->website_name = $data['website_name'];
             $setting->site_title = $data['site_title'];
+            $setting->vat = $data['vat'];
+            $setting->shipping_charge = $data['shipping_charge'];
           
             $setting->fb = $data['fb'];
             $setting->lin = $data['lin'];
@@ -113,6 +117,19 @@ if ($request->hasFile('admin_logo')) {
     public function mailSettingStore(Request $request)
     {
         
+        $data = $request->all();
+    
+        //writting mail info in .env file
+        $path = base_path('.env');
+        // dd($path);
+        $searchArray = array('MAIL_HOST=' . env('MAIL_HOST') . '' , 'MAIL_PORT=' . env('MAIL_PORT') . ''  , 'MAIL_FROM_NAME="' . env('MAIL_FROM_NAME') . '"' , 'MAIL_FROM_EMAIL="' . env('MAIL_FROM_EMAIL') . '"' , 'MAIL_USERNAME=' . env('MAIL_USERNAME') . '' , 'MAIL_PASSWORD=' . env('MAIL_PASSWORD') . '');
+        //    return $searchArray;
+
+        $replaceArray = array('MAIL_HOST=' . $data['mail_host'] . '' , 'MAIL_PORT=' . $data['port'] . ''  , 'MAIL_FROM_NAME="' . $data['mail_name'] . '"' , 'MAIL_FROM_EMAIL="' . $data['email_name'] . '"' , 'MAIL_USERNAME=' . $data['mail_username'] . '' , 'MAIL_PASSWORD=' . $data['password'] . '');
+        // return $replaceArray;
+        file_put_contents($path, str_replace($searchArray, $replaceArray, file_get_contents($path)));
+
+        
 
 
         return redirect()->back()->with('flash_message_success', 'Email Configuration updated successfully');
@@ -126,6 +143,23 @@ if ($request->hasFile('admin_logo')) {
        
         
         return redirect()->back()->with('flash_message_success', 'Database cleared successfully');
+    } 
+
+    
+    public function legal_notice()
+    {
+     
+       
+        
+        return view('front.legal_notice');
+    } 
+    
+    public function privacy_policy()
+    {
+     
+       
+        
+        return view('front.privacy_policy');
     } 
     
 }
